@@ -160,7 +160,6 @@ research-paper-webapp-poc/
 | vite | Build tool | Latest |
 | eslint | Code linting | Latest |
 | prettier | Code formatting | Latest |
-| playwright | Testing | Latest |
 
 ## Technical Constraints
 
