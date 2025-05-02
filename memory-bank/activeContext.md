@@ -32,6 +32,64 @@ The project is currently in **Phase 1: Foundation**, focusing on establishing th
 
 ## Recent Changes
 
+### Data Structure Implementation
+
+- Created structured JSON files based on the research paper:
+  - **videos.json** - Contains metadata for the 4 YouTube videos analyzed in the study:
+    - Video ID, account name, subscribers, title (Korean and English)
+    - Release date, views, comment count, YouTube ID
+    - List of idols appearing in each video
+  
+  - **idols.json** - Contains information about the 7 idols featured in the study:
+    - Idol ID, name, gender, demographic background
+    - Accent type as described in the research
+    - List of videos the idol appears in
+  
+  - **findings.json** - Contains key statistics from the paper and aspect coding key:
+    - Sentiment distribution (positive: 88.1%, neutral: 10.6%, negative: 1.3%)
+    - Evaluation aspects distribution (socialAttractiveness: 33.6%, nativeness: 30.3%, etc.)
+    - Aspect coding key mapping between codes (a, b, c, etc.) and their meanings
+  
+  - **comments.json** - Processed comment data from the CSV files:
+    - Unique ID, video ID, original text, language (English/Korean)
+    - Sentiment (positive, neutral, negative, off-topic)
+    - Evaluation aspects (general, nativeness, motivation, etc.)
+    - Mentioned idols, quotes, translations for Korean comments
+    - Metadata including total comment count, source file, and last updated timestamp
+
+- Implemented comprehensive data processing utilities in `src/lib/utils/dataProcessing.js`:
+  - **parseCommentsCSV** - Converts raw CSV data to structured JSON
+    - Handles commas within quoted fields
+    - Extracts translations from Korean comments
+    - Identifies mentioned idols in text
+    - Maps sentiment codes to descriptive strings
+    - Parses aspect codes into standardized names
+  
+  - **Filtering Functions**:
+    - **getCommentsByIdol** - Filters comments by mentioned idol
+    - **getCommentsByVideo** - Filters comments by video source
+  
+  - **Analysis Functions**:
+    - **calculateSentimentDistribution** - Analyzes sentiment distribution with percentages
+    - **calculateAspectDistribution** - Analyzes evaluation aspect distribution with percentages
+    - **createSentimentAspectMatrix** - Creates cross-tabulation of sentiment vs. aspect
+  
+  - **Extraction Functions**:
+    - **getKoreanCommentsWithTranslations** - Extracts Korean comments with translations
+    - **getAspectExamples** - Gets example comments for each evaluation aspect
+    - **getSentimentExamples** - Gets example comments for each sentiment
+  
+  - **Visualization Functions**:
+    - **formatSentimentChartData** - Formats data for SentimentChart component with proper colors
+    - **formatAspectChartData** - Formats data for AspectChart component with proper colors
+
+- Created data processing scripts:
+  - **processRawData.js** - Processes the truncated dataset for testing
+  - **processFullData.js** - Processes the full dataset for production
+  - Added npm scripts: `npm run process-data` and `npm run process-full-data`
+
+- Created example usage code in `src/lib/utils/dataExample.js` to demonstrate how to use the data processing utilities
+
 ### Project Initialization
 
 - Created SvelteKit project with TypeScript configuration
@@ -71,41 +129,35 @@ The project is currently in **Phase 1: Foundation**, focusing on establishing th
 - Added proper ARIA attributes and keyboard navigation
 - Ensured all interactive elements are properly accessible
 
-### Data Structure
-
-- Working on creating initial JSON data files:
-  - idols.json (based on Table 2 from the paper)
-  - videos.json (based on Table 1 from the paper)
-  - findings.json (key statistics from the paper)
-
-### Route Structure
-
-- Implemented basic routing with SvelteKit
-- Created initial page components:
-  - Home page
-  - Video showcase
-  - Idol profiles
-  - Comment explorer (placeholder)
-  - Educational content
-  - About page
-
 ## Next Steps
 
 ### Immediate Priorities
 
-1. **Implement Video Hub**
+1. **Process Raw Data**
+   - Use the utility functions to process the raw CSV data
+   - Generate the comments.json file with structured data
+   - Validate the processed data against the paper's findings
+   - Create additional derived data files if needed
+
+2. **Integrate Data with Components**
+   - Connect the processed data to the UI components
+   - Implement data visualization components
+   - Create interactive filtering and search functionality
+   - Ensure proper handling of Korean text and translations
+
+3. **Implement Video Hub**
    - Integrate YouTube embed functionality
    - Display video metadata from research
    - Create navigation between videos
    - Implement responsive video layout
 
-2. **Develop Idol Profiles**
+4. **Develop Idol Profiles**
    - Create detailed profile templates
    - Implement accent type visualization
    - Add demographic information display
    - Create placeholder for comment data integration
 
-3. **Build Educational Framework**
+5. **Build Educational Framework**
    - Develop interactive explanations of key concepts
    - Create visual representation of Kachru's circles
    - Implement glossary of linguistic terms
@@ -133,33 +185,33 @@ The project is currently in **Phase 1: Foundation**, focusing on establishing th
 
 ## Active Decisions and Considerations
 
-### Design Decisions
+### Data Structure Decisions
 
-1. **Mobile-First Approach**
-   - Designing for mobile first, then expanding to larger screens
-   - Using flexible layouts that adapt to different viewport sizes
-   - Ensuring touch-friendly interaction targets
-   - Considering limited bandwidth and processing power
+1. **Aspect Coding System**
+   - Created a mapping between the original codes and standardized aspect names
+   - Added an aspectCodingKey to findings.json for future reference and updates
+   - Normalized aspect names for consistency across the application
+   - Handled potential inconsistencies in the coding system
 
-2. **Progressive Disclosure**
-   - Starting with simplified information
-   - Providing deeper details through user interaction
-   - Using expandable sections for complex content
-   - Balancing information density with clarity
+2. **Comment Processing**
+   - Implemented robust CSV parsing that handles commas within quoted fields
+   - Added logic to extract translations from Korean comments
+   - Created functions to identify mentioned idols in comments
+   - Designed flexible filtering and aggregation functions
 
-3. **Visual Hierarchy**
-   - Emphasizing key research findings visually
-   - Using color and typography to guide attention
-   - Creating clear distinction between different types of content
-   - Maintaining consistent visual language across features
+3. **Data Visualization Preparation**
+   - Created functions to format data specifically for Chart.js
+   - Implemented consistent color schemes based on the design system
+   - Added support for sorting and filtering data for visualization
+   - Ensured data is properly structured for different chart types
 
 ### Technical Considerations
 
 1. **Performance Optimization**
-   - Lazy loading components and data
-   - Optimizing assets for fast loading
-   - Minimizing JavaScript bundle size
-   - Implementing efficient rendering patterns
+   - Designed data processing to handle the full dataset efficiently
+   - Implemented functions that can work with subsets of data
+   - Created utility functions that can be used client-side or server-side
+   - Ensured data structures are optimized for quick access
 
 2. **Accessibility Implementation**
    - Using semantic HTML elements
@@ -234,13 +286,13 @@ The project is currently in **Phase 1: Foundation**, focusing on establishing th
 
 ### Technical Insights
 
-1. **SvelteKit Advantages**
-   - Efficient component model reduces boilerplate
-   - Built-in routing simplifies navigation implementation
-   - Reactive statements make state management clearer
-   - Static site generation improves performance
+1. **Data Processing Challenges**
+   - Handling inconsistencies in the coding system
+   - Extracting translations from Korean comments
+   - Identifying mentioned idols in text
+   - Creating flexible aggregation functions
 
-2. **Data Visualization Challenges**
+2. **Data Visualization Considerations**
    - Balancing between simplicity and accuracy
    - Making visualizations responsive across devices
    - Ensuring accessibility of interactive charts

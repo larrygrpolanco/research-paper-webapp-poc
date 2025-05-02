@@ -2,7 +2,7 @@
 
 ## Current Status
 
-The K-Pop Accent Web App is in the early stages of development, currently in **Phase 1: Foundation**. The project has been initialized with the basic structure and architecture in place, and significant progress has been made on the core UI components and design system.
+The K-Pop Accent Web App is in the early stages of development, currently in **Phase 1: Foundation**. The project has been initialized with the basic structure and architecture in place, and significant progress has been made on the core UI components, design system, and data structure.
 
 ### Project Timeline
 
@@ -13,8 +13,11 @@ The K-Pop Accent Web App is in the early stages of development, currently in **P
 [✓] Memory Bank Creation
 [✓] Component Development
 [✓] Design System Implementation
+[✓] Data Structure Design
+[✓] Data Processing Utilities
 [⟳] Home Page Implementation (In Progress)
 [⟳] Layout Structure Implementation (In Progress)
+[ ] Raw Data Processing
 [ ] Video Hub Implementation
 [ ] Idol Profile Implementation
 [ ] Educational Framework Development
@@ -57,13 +60,42 @@ The K-Pop Accent Web App is in the early stages of development, currently in **P
 
 ### Data Structure
 
-- **JSON Files**: Initial data files created based on research tables
-- **Data Models**: Basic data structures
-- **Placeholder Data**: Working on it now I have CSVs
+- **JSON Files**: Created structured JSON files based on the research paper:
+  - videos.json - Contains metadata for the 4 YouTube videos analyzed in the study
+  - idols.json - Contains information about the 7 idols featured in the study
+  - findings.json - Contains key statistics from the paper and aspect coding key
+  - comments.json - Placeholder for processed comment data
+
+- **Data Processing Utilities**: Implemented comprehensive data processing utilities:
+  - parseCommentsCSV - Converts raw CSV data to structured JSON
+  - getCommentsByIdol - Filters comments by mentioned idol
+  - getCommentsByVideo - Filters comments by video source
+  - calculateSentimentDistribution - Analyzes sentiment distribution
+  - calculateAspectDistribution - Analyzes evaluation aspect distribution
+  - createSentimentAspectMatrix - Creates cross-tabulation of sentiment vs. aspect
+  - getKoreanCommentsWithTranslations - Extracts Korean comments with translations
+  - getAspectExamples - Gets example comments for each evaluation aspect
+  - getSentimentExamples - Gets example comments for each sentiment
+  - formatSentimentChartData - Formats data for SentimentChart component
+  - formatAspectChartData - Formats data for AspectChart component
+
+- **Example Usage**: Created example code to demonstrate how to use the data processing utilities
 
 ## What's Left to Build
 
 ### Phase 1: Foundation
+
+#### Process Raw Data
+- Use the utility functions to process the raw CSV data
+- Generate the comments.json file with structured data
+- Validate the processed data against the paper's findings
+- Create additional derived data files if needed
+
+#### Integrate Data with Components
+- Connect the processed data to the UI components
+- Implement data visualization components
+- Create interactive filtering and search functionality
+- Ensure proper handling of Korean text and translations
 
 #### Video Analysis Hub
 - YouTube video embedding functionality
@@ -117,9 +149,10 @@ The K-Pop Accent Web App is in the early stages of development, currently in **P
 
 ### Technical Limitations
 
-1. **Placeholder Data**: Currently using simplified placeholder data instead of the full research dataset
-2. **Chart.js Integration**: SentimentChart component loads Chart.js dynamically, which may cause a brief delay
-3. **Performance**: No optimization work done yet
+1. **Data Processing**: The utility functions need to be tested with the full dataset to ensure they handle all edge cases
+2. **Aspect Coding System**: There are some inconsistencies in the coding system that need to be addressed
+3. **Performance**: No optimization work done yet for handling large datasets
+4. **Korean Text Handling**: Need to ensure proper handling of Korean text and translations
 
 ### Content Gaps
 
@@ -148,15 +181,14 @@ The project began with the goal of making academic research more accessible thro
 3. **Simplified Scope**: Focusing on demonstrating the approach rather than implementing every possible feature
 4. **Foundation First**: Building a solid technical foundation before adding complex features
 
-### Design Evolution
+### Data Structure Evolution
 
-The visual design approach has evolved from initial concepts:
+The data structure approach has evolved from initial concepts:
 
-1. **From Complex to Clean**: Moving toward a cleaner, more minimal aesthetic
-2. **From Dense to Progressive**: Shifting from dense information display to progressive disclosure
-3. **From Static to Interactive**: Evolving from static presentations to interactive explorations
-4. **From Generic to K-Pop Inspired**: Refining the visual language to reflect K-pop aesthetics while maintaining clarity
-5. **From Tailwind-Only to Custom CSS**: Implementing custom CSS classes while maintaining Tailwind as a fallback
+1. **From Unstructured to Structured**: Moving from raw CSV data to structured JSON
+2. **From Static to Dynamic**: Creating utility functions that can generate different views of the data
+3. **From Monolithic to Modular**: Breaking down data processing into smaller, reusable functions
+4. **From Rigid to Flexible**: Designing data structures that can accommodate future changes and additions
 
 ### Technical Approach Refinement
 
@@ -172,23 +204,23 @@ The technical implementation strategy has been refined:
 
 ### Short-Term Goals (Next 2 Weeks)
 
-1. **Implement Video Hub**
+1. **Process Raw Data**
+   - Use the utility functions to process the raw CSV data
+   - Generate the comments.json file with structured data
+   - Validate the processed data against the paper's findings
+   - Create additional derived data files if needed
+
+2. **Implement Video Hub**
    - Create video player component
    - Display video metadata
    - Implement video selection
    - Add basic comment previews
 
-2. **Develop Idol Profiles**
+3. **Develop Idol Profiles**
    - Create profile templates
    - Implement accent visualization
    - Add demographic information
    - Create navigation between profiles
-
-3. **Build Educational Framework**
-   - Develop key concept explanations
-   - Create visual representations
-   - Implement glossary functionality
-   - Connect concepts to examples
 
 ### Medium-Term Goals (Next Month)
 
@@ -224,18 +256,43 @@ The long-term vision for the project (beyond the current proof of concept) inclu
 
 ### Technical Lessons
 
-1. **SvelteKit Advantages**: The framework provides an efficient way to build component-based applications with minimal boilerplate
-2. **Static-First Approach**: Starting with static content and adding interactivity progressively works well for this type of project
-3. **Design System Importance**: Establishing a consistent design system early saves time and improves coherence
-4. **Component Boundaries**: Clear component boundaries and interfaces improve maintainability
-5. **Accessibility Implementation**: Converting div elements with click handlers to button elements, adding keyboard event handlers, and adding appropriate ARIA attributes improves accessibility
+1. **Data Processing Challenges**
+   - Handling inconsistencies in the coding system
+   - Extracting translations from Korean comments
+   - Identifying mentioned idols in text
+   - Creating flexible aggregation functions
+
+2. **Data Visualization Considerations**
+   - Balancing between simplicity and accuracy
+   - Making visualizations responsive across devices
+   - Ensuring accessibility of interactive charts
+   - Communicating complex relationships clearly
+
+3. **Component Architecture Lessons**
+   - Benefits of clear component boundaries
+   - Importance of consistent props and events
+   - Value of reusable utility functions
+   - Need for documentation as complexity increases
+
+4. **Accessibility Implementation**
+   - Importance of using semantic HTML elements
+   - Converting div elements with click handlers to button elements
+   - Adding keyboard event handlers for interactive elements
+   - Adding appropriate ARIA attributes for screen readers
 
 ### Project Management Lessons
 
-1. **Phased Approach Benefits**: Breaking the project into phases allows for meaningful progress despite incomplete data
-2. **Documentation Value**: Comprehensive documentation in the memory bank provides clarity and direction
-3. **Scope Management**: Focusing on proof of concept rather than feature completeness keeps the project manageable
-4. **Research Simplification**: Finding the balance between academic accuracy and accessibility requires careful consideration
+1. **Phased Approach Benefits**
+   - Breaking the project into phases allows for meaningful progress despite incomplete data
+   - Clear milestones provide direction and focus
+   - Flexibility to adjust based on new information
+   - Manageable scope keeps the project on track
+
+2. **Documentation Value**
+   - Comprehensive documentation in the memory bank provides clarity and direction
+   - Detailed comments in utility functions make them easier to understand and use
+   - Clear data structure documentation helps with integration
+   - Regular updates to progress tracking help maintain momentum
 
 ### Future Considerations
 

@@ -1,1 +1,30 @@
-{}
+{
+  "sentimentDistribution": {
+    "positive": 88.1,
+    "neutral": 10.6,
+    "negative": 1.3
+  },
+  "evaluationAspects": {
+    "socialAttractiveness": 33.6,
+    "nativeness": 30.3,
+    "phoneticFeatures": 4.7,
+    "speech": 3.7,
+    "motivation": 3.2,
+    "proficiency": 2.2,
+    "comprehensibility": 2.2,
+    "metalinguistic": 0.7
+  },
+  "aspectCodingKey": {
+    "a": "General positive evaluation",
+    "b": "(Non-)nativeness",
+    "c": "Learning motivation",
+    "d": "Proficiency",
+    "e": "Phonetic features",
+    "COM": "Comprehensibility",
+    "SP": "Speech",
+    "SA": "Social Attractiveness",
+    "MOT": "Learning Motivation",
+    "NA": "Nativeness",
+    "META": "Metalinguistic awareness"
+  }
+}
