@@ -1,221 +1,132 @@
-# K-Pop Accent Web App: System Patterns
+# System Patterns
 
-## System Architecture
+## Architecture Overview
 
-The K-Pop Accent Web App follows a component-based architecture using SvelteKit, with a focus on modularity, reusability, and clear separation of concerns. As a proof of concept, the architecture prioritizes simplicity and maintainability while establishing patterns that could scale for future expansion.
+The application follows a component-based architecture using SvelteKit, with a clear separation of concerns between data, UI components, and pages.
 
-### High-Level Architecture
-
-```
-┌─────────────────────────────────────────────────────────┐
-│                      SvelteKit App                       │
-│                                                         │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐  │
-│  │    Routes   │  │ Components  │  │  Data Stores    │  │
-│  └─────────────┘  └─────────────┘  └─────────────────┘  │
-│         │               │                  │            │
-│         ▼               ▼                  ▼            │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐  │
-│  │    Pages    │  │   Shared    │  │  Static Data    │  │
-│  │             │  │  Components │  │                 │  │
-│  └─────────────┘  └─────────────┘  └─────────────────┘  │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
+```mermaid
+graph TD
+    A[JSON Data Files] --> B[Data Processing]
+    B --> C[UI Components]
+    C --> D[Pages]
+    E[Style System] --> C
+    E --> D
 ```
 
-### Key Architectural Decisions
+## Key Components
 
-1. **Static Site Generation**: The application uses SvelteKit's static site generation capabilities to pre-render pages at build time, improving performance and SEO.
+### Data Layer
+- **JSON Data Files**: Located in `src/lib/data/`, these files contain the structured data for comments, findings, idols, and videos.
+- **Data Processing Utilities**: Located in `src/lib/utils/`, these utilities handle data transformation, filtering, and analysis.
 
-2. **Client-Side Interactivity**: While pages are pre-rendered, interactive elements use client-side JavaScript for dynamic features like filtering, sorting, and visualizations.
+### UI Components
+- **CommentCard**: Displays a single comment with sentiment, tags, and metadata.
+- **IdolProfile**: Displays information about a K-pop idol, including their accent type and background.
+- **SentimentChart**: Visualizes sentiment distribution using a pie chart.
+- **AccentBadge**: Displays a badge indicating an accent type.
+- **FilterBar**: Provides filtering options for comments.
+- **VideoPlayer**: Embeds YouTube videos with additional metadata.
 
-3. **JSON Data Sources**: Research data is stored in structured JSON files, making it easy to update and maintain without a database.
+### Pages
+- **Home**: Landing page with research overview and navigation.
+- **Comments**: Explorer for browsing and filtering comments.
+- **Idols**: Profiles of K-pop idols featured in the research.
+- **Videos**: YouTube videos analyzed in the research.
+- **Learn**: Educational content about linguistic concepts.
+- **About**: Information about the project and research.
 
-4. **Component Composition**: Features are built by composing smaller, reusable components that can be combined in different ways.
+### Style System
+- **CSS Variables**: Defined in `src/app.css`, these variables provide a consistent design system.
+- **Responsive Design**: Media queries ensure the application works on all device sizes.
 
-5. **Progressive Enhancement**: Core content is accessible without JavaScript, with enhanced interactivity added when available.
+## Data Flow Patterns
 
-## Component Relationships
-
-### Core Components and Their Relationships
-
-```
-┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
-│   Header.svelte │     │ Footer.svelte   │     │ Layout.svelte   │
-└─────────────────┘     └─────────────────┘     └─────────────────┘
-         │                      │                       │
-         └──────────────────────┼───────────────────────┘
-                                │
-                                ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                         Page Components                          │
-├─────────────┬─────────────┬─────────────┬─────────────┬─────────┤
-│  Home Page  │Video Hub    │Idol Profiles│ Comment     │ Learn   │
-│             │             │             │ Explorer    │ Section │
-└─────────────┴─────────────┴─────────────┴─────────────┴─────────┘
-         │             │             │             │          │
-         └─────────────┴─────────────┴─────────────┴──────────┘
-                                │
-                                ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                      Shared UI Components                        │
-├─────────────┬─────────────┬─────────────┬─────────────┬─────────┤
-│VideoPlayer  │IdolProfile  │CommentCard  │SentimentChart│FilterBar│
-└─────────────┴─────────────┴─────────────┴─────────────┴─────────┘
+### Comment Filtering Flow
+```mermaid
+graph TD
+    A[User Selects Filters] --> B[FilterBar Component]
+    B --> C[Filter State Updated]
+    C --> D[Filter Function Applied]
+    D --> E[Filtered Comments Displayed]
 ```
 
-### Data Flow Patterns
-
-```
-┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│  JSON Data  │────▶│  Data Store │────▶│  Components │
-└─────────────┘     └─────────────┘     └─────────────┘
-                          │                    │
-                          │                    │
-                          ▼                    ▼
-                    ┌─────────────┐     ┌─────────────┐
-                    │User Actions │◀────│   UI Events │
-                    └─────────────┘     └─────────────┘
-                          │
-                          │
-                          ▼
-                    ┌─────────────┐
-                    │State Updates│
-                    └─────────────┘
+### Idol Selection Flow
+```mermaid
+graph TD
+    A[User Selects Idol] --> B[Idol Card Clicked]
+    B --> C[Selected Idol State Updated]
+    C --> D[Idol Detail Component Rendered]
+    D --> E[Idol-Specific Comments Loaded]
 ```
 
-## Design Patterns
+### Video Playback Flow
+```mermaid
+graph TD
+    A[User Selects Video] --> B[Video Card Clicked]
+    B --> C[Selected Video State Updated]
+    C --> D[YouTube Player Embedded]
+    D --> E[Video-Specific Comments Loaded]
+```
 
-### Component Design Patterns
+## Component Patterns
 
-1. **Container/Presentational Pattern**:
-   - Container components manage data and state
-   - Presentational components focus on rendering UI
-   - Example: CommentExplorer (container) uses CommentCard (presentational)
+### Card Pattern
+Used for displaying discrete pieces of information:
+- Comment cards
+- Idol profile cards
+- Video cards
+- Feature cards
 
-2. **Composition Pattern**:
-   - Complex components built from simpler ones
-   - Shared functionality extracted to reusable components
-   - Example: IdolProfile composed of AccentBadge, ProfileImage, etc.
+### Filter Pattern
+Used for filtering data based on user selection:
+- Sentiment filters
+- Aspect filters
+- Idol filters
+- Language filters
 
-3. **Props Down, Events Up**:
-   - Data flows down through props
-   - Events bubble up through custom event dispatchers
-   - Maintains predictable data flow and component independence
+### Chart Pattern
+Used for visualizing data:
+- Sentiment distribution chart
+- (Planned) Aspect distribution chart
 
-### State Management Patterns
+### Badge Pattern
+Used for indicating categories or types:
+- Accent type badges
+- Sentiment indicators
+- Tag badges
 
-1. **Local Component State**:
-   - Simple components manage their own state
-   - Used for UI-specific state like toggle status, form inputs
+## State Management
 
-2. **Stores for Shared State**:
-   - Svelte stores for state shared across components
-   - Used for filter selections, active items, and global settings
+The application uses Svelte's built-in reactivity system for state management:
 
-3. **Derived Stores**:
-   - Computed values based on other stores
-   - Used for filtered data sets and aggregated statistics
+- **Local Component State**: Used for component-specific state (e.g., isExpanded, isLoading).
+- **Page-Level State**: Used for page-specific state (e.g., selectedFilters, currentPage).
+- **Derived State**: Used for computed values based on other state (e.g., filteredComments, paginatedComments).
 
-### Routing Patterns
+## Responsive Design Patterns
 
-1. **Feature-Based Routes**:
-   - Each major feature has its own route
-   - Nested routes for sub-features where appropriate
+The application uses a mobile-first approach with breakpoints at:
+- **Mobile**: 0-639px
+- **Tablet**: 640px-1023px
+- **Desktop**: 1024px+
 
-2. **Shared Layout**:
-   - Common layout elements across all routes
-   - Consistent navigation and branding
+Key responsive patterns include:
+- Single column layouts on mobile, multi-column on larger screens
+- Stacked components on mobile, side-by-side on larger screens
+- Adjusted font sizes and spacing for different screen sizes
 
-3. **Dynamic Parameters**:
-   - Routes with parameters for specific items
-   - Example: /idols/[name] for individual idol profiles
+## Accessibility Patterns
 
-## Implementation Patterns
+The application aims to follow accessibility best practices, but currently has some issues to address:
+- Need to add keyboard event handlers to clickable elements
+- Need to add proper ARIA roles to interactive elements
+- Ensure sufficient color contrast for all text
+- Provide alternative text for images and icons
 
-### Data Handling
+## Future Architectural Considerations
 
-1. **Static Data Files**:
-   - JSON files for research data
-   - Imported and processed at build time
-
-2. **Data Transformation**:
-   - Helper functions to transform raw data into component-friendly formats
-   - Centralized in utility modules
-
-3. **Lazy Loading**:
-   - Large data sets loaded only when needed
-   - Improves initial load performance
-
-### UI Patterns
-
-1. **Responsive Design**:
-   - Mobile-first approach
-   - Breakpoints defined in global CSS variables
-   - Flexible layouts that adapt to different screen sizes
-
-2. **Consistent Visual Language**:
-   - Design tokens for colors, spacing, typography
-   - Component-specific styles that inherit from global tokens
-
-3. **Progressive Disclosure**:
-   - Show essential information first
-   - Details available through user interaction
-   - Prevents overwhelming users with too much information
-
-### Accessibility Patterns
-
-1. **Semantic HTML**:
-   - Proper use of HTML elements
-   - ARIA attributes where needed
-
-2. **Keyboard Navigation**:
-   - All interactive elements accessible via keyboard
-   - Focus management for complex components
-
-3. **Screen Reader Support**:
-   - Alternative text for visual elements
-   - Appropriate ARIA roles and labels
-
-## Critical Implementation Paths
-
-### Phase 1: Foundation
-
-1. **Design System Implementation**
-   - Global styles and design tokens
-   - Core UI components
-   - Responsive layout framework
-
-2. **Video Hub**
-   - YouTube video embedding
-   - Video metadata display
-   - Basic navigation
-
-3. **Idol Profiles**
-   - Profile templates
-   - Data structure for idol information
-   - Accent type visualization
-
-4. **Educational Framework**
-   - Content structure for linguistic concepts
-   - Interactive elements for key terms
-   - Visual explanations of research context
-
-### Phase 2: Data Integration
-
-1. **Comment Data Structure**
-   - Schema design for comments
-   - Processing and normalization
-   - Indexing for search and filtering
-
-2. **Interactive Visualizations**
-   - Chart components for research findings
-   - Filter and selection mechanisms
-   - Data-driven insights
-
-3. **Cross-Feature Navigation**
-   - Connecting related content across features
-   - Contextual links between components
-   - Unified user journey
-
-
+1. **Enhanced Data Processing**: Improve the data processing utilities to handle more complex filtering and analysis.
+2. **Additional Visualizations**: Add more chart components for visualizing different aspects of the data.
+3. **Improved Accessibility**: Address the current accessibility issues and implement more robust accessibility patterns.
+4. **Performance Optimization**: Optimize data loading and processing for better performance with larger datasets.
+5. **Internationalization**: Consider adding support for multiple languages, particularly Korean.

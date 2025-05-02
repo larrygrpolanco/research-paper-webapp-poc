@@ -1,99 +1,99 @@
-# K-Pop Accent Web App: Product Context
+# Product Context
 
 ## Why This Project Exists
 
-### The Problem: Academic Research Accessibility Gap
-
-Academic research contains valuable insights and knowledge that could benefit a wide audience, but several barriers prevent this knowledge from reaching beyond academic circles:
-
-1. **Format Barriers**: Research papers follow strict academic conventions and formats that can be intimidating or confusing to non-academic readers.
-
-2. **Language Barriers**: Academic writing often uses specialized terminology and complex sentence structures that require domain expertise to understand.
-
-3. **Access Barriers**: Many research papers are behind paywalls or published in journals that the general public doesn't regularly access.
-
-4. **Engagement Barriers**: Static text and tables don't leverage the interactive, visual, and dynamic capabilities that could make findings more engaging and easier to understand.
-
-### The Opportunity: K-Pop as a Gateway to Linguistics
-
-The research paper on K-pop idols' English accents presents a unique opportunity:
-
-1. **Popular Subject Matter**: K-pop has a massive global following, making it an engaging entry point for exploring linguistic concepts.
-
-2. **Rich Multimedia Content**: The research centers on YouTube videos that can be directly embedded and experienced.
-
-3. **Clear Data Visualizations**: The findings include percentages and categories that can be transformed into interactive visualizations.
-
-4. **Cross-Cultural Relevance**: The topic bridges linguistics, cultural studies, and popular entertainment, appealing to diverse audiences.
-
-## How It Should Work
-
-### User Experience Goals
-
-1. **Intuitive Navigation**: Users should be able to explore the research findings without needing instructions or guidance.
-
-2. **Progressive Disclosure**: Complex concepts should be introduced gradually, with basic information presented first and deeper insights available through further interaction.
-
-3. **Visual Learning**: Key findings should be presented visually first, with supporting text providing context and detail.
-
-4. **Interactive Exploration**: Users should be able to filter, sort, and explore the data according to their interests.
-
-5. **Multimedia Integration**: Videos, charts, and interactive elements should work together to create a cohesive experience.
-
-### User Journeys
-
-#### Academic Researcher
-- Discovers the site as an example of research visualization
-- Explores how complex findings are simplified for broader audiences
-- Considers how their own research might be presented in similar formats
-
-#### K-Pop Fan
-- Arrives through interest in specific idols featured in the study
-- Engages with videos and idol profiles
-- Discovers linguistic concepts through their interest in K-pop
-
-#### Linguistics Student
-- Uses the site as a case study in language perception
-- Explores the theoretical framework section to understand key concepts
-- Analyzes the data visualizations to understand patterns in accent perception
-
-#### Casual Browser
-- Discovers the site through social media or search
-- Watches videos and explores basic visualizations
-- Gains new understanding of how accents are perceived
+The K-Pop Accent Web App exists to make academic research on K-pop idols' English accents accessible, engaging, and interactive for a broader audience. Traditional academic papers are often inaccessible to the general public due to their formal language, specialized terminology, and static presentation. This project transforms the findings from a linguistics research paper into a visual, explorable format that helps users understand how K-pop fans perceive and evaluate the English accents of K-pop idols.
 
 ## Problems It Solves
 
-1. **Makes Research Findings Accessible**: Transforms academic content into an approachable format for non-specialists.
+1. **Accessibility of Academic Research**: Makes complex research findings accessible to non-academics by presenting them in an intuitive, visually appealing format.
 
-2. **Bridges Entertainment and Education**: Uses popular culture as an entry point to linguistic concepts.
+2. **Engagement with Research**: Transforms static research data into interactive visualizations and explorable content, making it more engaging and interesting to explore.
 
-3. **Demonstrates Interactive Research Presentation**: Shows how web technologies can transform static research into dynamic experiences.
+3. **Understanding of Linguistic Concepts**: Provides educational content about linguistic concepts related to accent perception and language attitudes in an accessible way.
 
-4. **Provides a Template for Future Projects**: Creates a reusable approach for visualizing other research topics.
+4. **Visualization of Research Data**: Presents research data in visual formats that make patterns and insights easier to understand than raw data or text descriptions.
 
-5. **Enhances Understanding of Language Perception**: Helps users understand how accents influence social perceptions in global contexts.
+5. **Bridging Academia and Public Interest**: Creates a bridge between academic research and public interest in K-pop and language learning.
 
-## Success Looks Like
+## How It Should Work
 
-1. **Users Without Academic Backgrounds Can Explain Key Findings**: After exploring the site, a casual user should be able to explain the main research findings in their own words.
+The application should provide multiple ways to explore the research findings:
 
-2. **Engagement Across Multiple Features**: Users explore beyond their initial point of interest to discover other aspects of the research.
+1. **Comment Explorer**: Users should be able to browse, filter, and search comments about K-pop idols' English accents, with clear visual indicators of sentiment and evaluation aspects.
 
-3. **Cross-Disciplinary Interest**: The project attracts visitors interested in K-pop, linguistics, web design, and research communication.
+2. **Idol Profiles**: Users should be able to explore profiles of K-pop idols featured in the research, including their accent types, backgrounds, and how fans perceive their English.
 
-4. **Inspiration for Similar Projects**: Other researchers or designers use this as inspiration for their own research visualization projects.
+3. **Video Hub**: Users should be able to watch the YouTube videos analyzed in the research and see related comments, with timestamps highlighting specific accent features.
 
-5. **Positive Feedback from Both Academic and Non-Academic Users**: The project is valued for both its academic integrity and its accessibility.
+4. **Educational Content**: Users should be able to learn about linguistic concepts related to the research, such as Kachru's Three Circles model and accent perception.
 
-## Constraints and Considerations
+5. **Research Context**: Users should be able to understand the context and methodology of the original research.
 
-1. **Proof of Concept Scope**: As a proof of concept, the project focuses on demonstrating the approach rather than implementing every possible feature.
+## User Experience Goals
 
-2. **Academic Integrity**: While simplifying content, the project must maintain the accuracy of the research findings.
+### For General Users
+- **Intuitive Navigation**: Users should be able to easily navigate between different sections of the application.
+- **Visual Appeal**: The application should be visually appealing and engaging, with a consistent design system.
+- **Accessibility**: The application should be accessible to users with different abilities and on different devices.
+- **Engaging Content**: The content should be presented in an engaging way that makes users want to explore more.
+- **Educational Value**: Users should learn something new about linguistics and accent perception.
 
-3. **Technical Simplicity**: Implementation should prioritize reliability and performance over technical complexity.
+### For K-Pop Fans
+- **Idol Focus**: Fans should be able to easily find information about their favorite idols.
+- **Video Integration**: Fans should be able to watch videos of idols speaking English and see related comments.
+- **Comment Exploration**: Fans should be able to explore what other fans say about idols' English accents.
+- **Cultural Context**: Fans should understand the cultural context of different accent perceptions.
 
-4. **Accessibility**: The design must consider users with different abilities and technical resources.
+### For Academics and Researchers
+- **Research Integrity**: The application should accurately represent the findings of the original research.
+- **Methodological Transparency**: The application should provide information about the research methodology.
+- **Data Exploration**: Researchers should be able to explore the data in different ways to gain new insights.
+- **Citation Information**: The application should provide proper citation information for the original research.
 
-5. **Bilingual Content**: Some content (especially comments) exists in both Korean and English, requiring thoughtful presentation.
+## Current Product Status
+
+The application has been implemented with the core functionality to explore the research findings:
+
+- **Home Page**: Provides an overview of the research and navigation to other sections.
+- **Comments Explorer**: Allows users to browse, filter, and search comments.
+- **Idol Profiles**: Displays information about K-pop idols and their accent types.
+- **Videos Page**: Shows YouTube videos analyzed in the research with related comments.
+- **Learn Page**: Provides educational content about linguistic concepts.
+- **About Page**: Offers information about the project and research.
+
+However, there are several issues that need to be addressed to improve the user experience:
+
+1. **Data Integration Issues**: Some filter counts show zero, and some idols don't have comments associated with their profiles.
+2. **UI/Layout Issues**: There are spacing issues and text overlap in various components.
+3. **Content Quality**: Some text needs to be rewritten by someone with deeper project knowledge.
+4. **Visualization Enhancements**: Additional charts and visualizations would improve the understanding of the data.
+5. **Accessibility Issues**: There are several accessibility warnings that need to be addressed.
+
+## Future Product Vision
+
+The future vision for the product includes:
+
+1. **Enhanced Data Exploration**: More advanced filtering and visualization options for exploring the data.
+2. **Improved Educational Content**: More in-depth explanations of linguistic concepts with interactive examples.
+3. **User Contributions**: Allowing users to contribute their own observations and analyses.
+4. **Multilingual Support**: Adding support for Korean and other languages to make the content more accessible.
+5. **Expanded Dataset**: Incorporating more comments and videos for a more comprehensive analysis.
+6. **Mobile App**: Developing a native mobile app for better performance and offline access.
+7. **Research Extension**: Expanding the research to include other aspects of K-pop idols' language use.
+
+## Key Stakeholders
+
+1. **End Users**: General public, K-pop fans, language learners, and educators who want to explore the research findings.
+2. **Original Researchers**: The authors of the research paper whose work is being visualized.
+3. **Academic Community**: Linguists and other researchers who may use the application for teaching or research.
+4. **K-Pop Community**: Fans, idols, and agencies who may be interested in the findings about accent perception.
+5. **Educational Institutions**: Schools and universities that may use the application as a teaching tool.
+
+## Success Metrics
+
+1. **User Engagement**: Time spent exploring the application, number of pages visited, and interaction with interactive elements.
+2. **Educational Impact**: User understanding of linguistic concepts before and after using the application.
+3. **Research Visibility**: Increased citations and references to the original research paper.
+4. **User Satisfaction**: Feedback from users about the application's usability and value.
+5. **Accessibility**: Compliance with accessibility standards and usability for users with different abilities.
