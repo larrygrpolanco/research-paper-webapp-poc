@@ -41,14 +41,14 @@ The project is currently in **Phase 1: Foundation**, focusing on establishing th
 
 ### Design System Implementation
 
-- Created global CSS variables for design tokens
+- Working on creating global CSS variables for design tokens
 - Implemented color palette from style guide
 - Set up typography scales and spacing system
 - Created initial component styling patterns
 
 ### Component Development
 
-- Created initial versions of core UI components:
+- Working on creating initial versions of core UI components:
   - Header.svelte
   - Footer.svelte
   - VideoPlayer.svelte
@@ -60,7 +60,7 @@ The project is currently in **Phase 1: Foundation**, focusing on establishing th
 
 ### Data Structure
 
-- Created initial JSON data files:
+- Working on creating initial JSON data files:
   - idols.json (based on Table 2 from the paper)
   - videos.json (based on Table 1 from the paper)
   - findings.json (key statistics from the paper)

@@ -1,3 +1,382 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+/* Design System - Based on style-guide.md */
+
+:root {
+  /* Color Palette */
+  --color-primary: #FF3E76; /* bright pink - inspired by K-pop aesthetics */
+  --color-secondary: #6236FF; /* purple */
+  --color-background: #FAFAFA; /* off-white */
+  --color-text-primary: #121212; /* near black */
+  --color-text-secondary: #5F5F5F; /* medium gray */
+  
+  /* Accent Colors */
+  --color-positive: #36D7B7; /* teal */
+  --color-neutral: #F1C40F; /* amber */
+  --color-negative: #E74C3C; /* red */
+  --color-border: #E0E0E0; /* light gray */
+  
+  /* Typography */
+  --font-family: 'Inter', sans-serif;
+  
+  /* Heading Sizes */
+  --font-size-h1: 32px;
+  --line-height-h1: 40px;
+  --letter-spacing-h1: -0.5px;
+  
+  --font-size-h2: 24px;
+  --line-height-h2: 32px;
+  --letter-spacing-h2: -0.25px;
+  
+  --font-size-h3: 20px;
+  --line-height-h3: 28px;
+  
+  --font-size-h4: 18px;
+  --line-height-h4: 24px;
+  
+  /* Body Text */
+  --font-size-regular: 16px;
+  --line-height-regular: 24px;
+  
+  --font-size-small: 14px;
+  --line-height-small: 20px;
+  
+  --font-size-caption: 12px;
+  --line-height-caption: 16px;
+  
+  --font-size-comment: 15px;
+  --line-height-comment: 22px;
+  
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Spacing System */
+  --spacing-1: 8px;
+  --spacing-2: 16px;
+  --spacing-3: 24px;
+  --spacing-4: 32px;
+  --spacing-5: 48px;
+  --spacing-6: 64px;
+  
+  /* Container */
+  --container-max-width: 1200px;
+  --container-padding-mobile: 24px;
+  --container-padding-desktop: 48px;
+  
+  /* Border Radius */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  
+  /* Box Shadow */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Base Styles */
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-regular);
+  line-height: var(--line-height-regular);
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+h1, .h1 {
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-h1);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-h1);
+  margin-top: var(--spacing-4);
+  margin-bottom: var(--spacing-3);
+}
+
+h2, .h2 {
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-h2);
+  margin-top: var(--spacing-4);
+  margin-bottom: var(--spacing-2);
+}
+
+h3, .h3 {
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+  font-weight: var(--font-weight-semibold);
+  margin-top: var(--spacing-3);
+  margin-bottom: var(--spacing-2);
+}
+
+h4, .h4 {
+  font-size: var(--font-size-h4);
+  line-height: var(--line-height-h4);
+  font-weight: var(--font-weight-semibold);
+  margin-top: var(--spacing-3);
+  margin-bottom: var(--spacing-2);
+}
+
+p {
+  margin-bottom: var(--spacing-2);
+}
+
+small, .small {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.caption {
+  font-size: var(--font-size-caption);
+  line-height: var(--line-height-caption);
+  color: var(--color-text-secondary);
+}
+
+/* Layout */
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding-mobile);
+  padding-right: var(--container-padding-mobile);
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: var(--container-padding-desktop);
+    padding-right: var(--container-padding-desktop);
+  }
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  border-radius: var(--border-radius-md);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #e62e66; /* 10% darker */
+}
+
+.btn-secondary {
+  background-color: white;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 62, 118, 0.05);
+}
+
+.btn-text {
+  background-color: transparent;
+  color: var(--color-text-secondary);
+  border: none;
+  padding: 8px 12px;
+}
+
+.btn-text:hover {
+  text-decoration: underline;
+}
+
+/* Cards */
+.card {
+  background-color: white;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.comment-card {
+  background-color: white;
+  padding: var(--spacing-2);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-border);
+  margin-bottom: var(--spacing-2);
+}
+
+.idol-profile-card {
+  background-color: white;
+  padding: var(--spacing-3);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--spacing-3);
+}
+
+.video-card {
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.video-card:hover {
+  transform: scale(1.02);
+}
+
+/* Navigation */
+.site-header {
+  height: 64px;
+  background-color: white;
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.mobile-nav {
+  height: 56px;
+  background-color: white;
+  box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Utility Classes */
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-positive {
+  color: var(--color-positive);
+}
+
+.text-neutral {
+  color: var(--color-neutral);
+}
+
+.text-negative {
+  color: var(--color-negative);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-positive {
+  background-color: var(--color-positive);
+}
+
+.bg-neutral {
+  background-color: var(--color-neutral);
+}
+
+.bg-negative {
+  background-color: var(--color-negative);
+}
+
+/* Sentiment Indicators */
+.sentiment-indicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: var(--spacing-1);
+}
+
+.sentiment-indicator.positive {
+  background-color: var(--color-positive);
+}
+
+.sentiment-indicator.neutral {
+  background-color: var(--color-neutral);
+}
+
+.sentiment-indicator.negative {
+  background-color: var(--color-negative);
+}
+
+/* Tags */
+.tag {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-medium);
+  margin-right: var(--spacing-1);
+  margin-bottom: var(--spacing-1);
+}
+
+.tag.social-attractiveness {
+  background-color: rgba(98, 54, 255, 0.1);
+  color: var(--color-secondary);
+}
+
+.tag.nativeness {
+  background-color: rgba(255, 62, 118, 0.1);
+  color: var(--color-primary);
+}
+
+/* Accessibility */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Focus States */
+:focus {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+/* Responsive Breakpoints */
+/* Mobile: 0-639px (default) */
+/* Tablet: 640px-1023px */
+@media (min-width: 640px) {
+  /* Tablet styles */
+}
+
+/* Desktop: 1024px+ */
+@media (min-width: 1024px) {
+  /* Desktop styles */
+  .mobile-nav {
+    display: none;
+  }
+}
+
+/* Large Desktop: 1440px+ */
+@media (min-width: 1440px) {
+  /* Large desktop styles */
+}

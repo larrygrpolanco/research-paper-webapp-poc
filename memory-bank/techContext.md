@@ -19,12 +19,8 @@
    - True reactivity without virtual DOM
    - Scoped CSS with component-level styling
 
-2. **TypeScript**: For type safety and improved developer experience
-   - Static type checking
-   - Better IDE support and autocompletion
-   - Self-documenting code
 
-3. **CSS**: Using a combination of approaches
+2. **CSS**: Using a combination of approaches
    - Global CSS variables for design tokens
    - Component-scoped CSS for specific styling
    - Minimal use of CSS frameworks to keep bundle size small
@@ -36,10 +32,6 @@
    - Animation capabilities for engaging visualizations
    - Customizable appearance to match design system
 
-2. **D3.js**: For more complex visualizations (used selectively)
-   - Advanced data binding capabilities
-   - Custom visualization types not available in Chart.js
-   - Used only where needed to minimize bundle size
 
 ### Media Integration
 
@@ -60,10 +52,6 @@
    - Automated formatting
    - Static analysis to catch common issues
 
-3. **Playwright**: End-to-end testing
-   - Cross-browser testing
-   - Visual regression testing
-   - Automated interaction testing
 
 ## Development Setup
 
@@ -73,13 +61,36 @@
 research-paper-webapp-poc/
 ├── .vscode/                # VS Code configuration
 ├── node_modules/           # Dependencies
-├── src/                    # Source code
-│   ├── lib/                # Shared libraries and components
-│   │   ├── components/     # Reusable UI components
-│   │   ├── data/           # JSON data files
-│   │   ├── styles/         # Global styles
-│   │   └── utils/          # Utility functions
-│   ├── routes/             # SvelteKit routes/pages
+├── src/
+├── lib/
+│   ├── components/
+│   │   ├── Header.svelte
+│   │   ├── Footer.svelte
+│   │   ├── VideoPlayer.svelte
+│   │   ├── CommentCard.svelte
+│   │   ├── IdolProfile.svelte
+│   │   ├── SentimentChart.svelte
+│   │   ├── FilterBar.svelte
+│   │   ├── AccentBadge.svelte
+│   ├── styles/
+│   │   ├── global.css         // Global styles including design system variables 
+│   ├── utils/
+│   │   ├── helpers.js         // General utility functions
+│   ├── data/
+│   │   ├── idols.json         // Data from Table 2 in the paper
+│   │   ├── videos.json        // Data from Table 1 in the paper
+│   │   ├── findings.json      // Key statistics from the paper
+├── routes/
+│   ├── +page.svelte           // Home page with research summary
+│   ├── +layout.svelte         // Main app layout
+│   ├── videos/+page.svelte    // Video showcase
+│   ├── idols/+page.svelte     // Idol profiles 
+│   ├── comments/+page.svelte  // Comment explorer (placeholder for later)
+│   ├── learn/+page.svelte     // Educational content
+│   ├── about/+page.svelte     // About the research & credits
+├── static/
+│   ├── images/
+│   ├── favicon.png
 │   └── app.html            # HTML template
 ├── static/                 # Static assets
 ├── tests/                  # Test files
@@ -144,7 +155,6 @@ research-paper-webapp-poc/
 
 | Dependency | Purpose | Version |
 |------------|---------|---------|
-| typescript | Type checking | Latest |
 | vite | Build tool | Latest |
 | eslint | Code linting | Latest |
 | prettier | Code formatting | Latest |
@@ -155,7 +165,6 @@ research-paper-webapp-poc/
 ### Browser Compatibility
 
 - **Modern Browsers**: Focus on supporting modern browsers (last 2 versions)
-- **Progressive Enhancement**: Core content accessible without JavaScript
 - **Responsive Design**: Support for mobile, tablet, and desktop viewports
 
 ### Performance Targets
@@ -170,13 +179,12 @@ research-paper-webapp-poc/
 - **WCAG 2.1 AA**: Compliance with accessibility standards
 - **Keyboard Navigation**: Full functionality without mouse
 - **Screen Reader Support**: Proper ARIA attributes and semantic HTML
-- **Color Contrast**: Meeting minimum contrast ratios
+
 
 ### Deployment Considerations
 
 - **Static Hosting**: Deployed as static files on Vercel
 - **CDN Integration**: Content delivery network for assets
-- **Analytics**: Minimal, privacy-focused analytics
 - **No Backend**: All functionality client-side or pre-rendered
 
 ## Tool Usage Patterns
@@ -191,13 +199,12 @@ research-paper-webapp-poc/
 2. **Component Documentation**:
    - Document props, events, and usage examples
    - Include accessibility considerations
-   - Provide visual examples
 
 ### Data Management
 
 1. **Data Transformation**:
    - Transform raw research data into component-friendly formats
-   - Create utility functions for common data operations
+   - Create utility functions for common data operations @src/lib/utils/helpers.js
    - Cache processed data where appropriate
 
 2. **State Management**:
@@ -205,38 +212,17 @@ research-paper-webapp-poc/
    - Keep state as close to components as possible
    - Derive computed values from base state
 
-### Testing Strategy
-
-1. **Component Testing**:
-   - Test component rendering and interactions
-   - Verify accessibility features
-   - Test edge cases and error states
-
-2. **End-to-End Testing**:
-   - Test critical user journeys
-   - Verify cross-browser compatibility
-   - Test responsive behavior
-
-## Technical Debt Considerations
-
-As a proof of concept, certain technical compromises are acceptable, but should be documented:
-
-1. **Data Structure**: Initial implementation uses static JSON files, which may need to be replaced with a more robust solution if the project scales.
-
-2. **Visualization Complexity**: Some visualizations may be simplified for the proof of concept, with notes on how they could be enhanced.
-
-3. **Browser Support**: Focus on modern browsers initially, with documentation on what would be needed for broader support.
-
-4. **Performance Optimization**: Initial implementation focuses on functionality, with performance optimizations as a secondary concern.
-
-5. **Internationalization**: Initial implementation focuses on English and Korean content, with notes on how to support additional languages.
 
 ## Future Technical Considerations
 
 While out of scope for the proof of concept, these technical considerations are documented for future reference:
 
-1. **Server-Side Features**: Potential for adding API endpoints for dynamic data
-2. **User Accounts**: Possibility for user accounts to save preferences or contribute data
-3. **Advanced Analytics**: More comprehensive analytics for research purposes
-4. **Content Management**: Tools for researchers to update content without code changes
-5. **Mobile App Conversion**: Potential for converting to a Progressive Web App or native app
+1. **LLM Integration**: Allow users to input their own comments about accents and have an LLM analyze them in real-time
+2. **Expanded Dataset**: Add functionality to analyze comments from newer videos
+3. **User Contribution**: Let users submit additional examples of K-pop idols' English speech
+4. **Accent Quiz**: Create an interactive game where users try to identify different English accents
+
+
+
+
+
