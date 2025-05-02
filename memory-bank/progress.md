@@ -61,35 +61,67 @@ The K-Pop Accent Web App is in the early stages of development, currently in **P
 ### Data Structure
 
 - **JSON Files**: Created structured JSON files based on the research paper:
-  - videos.json - Contains metadata for the 4 YouTube videos analyzed in the study
-  - idols.json - Contains information about the 7 idols featured in the study
-  - findings.json - Contains key statistics from the paper and aspect coding key
-  - comments.json - Placeholder for processed comment data
+  - **videos.json** - Contains metadata for the 4 YouTube videos analyzed in the study:
+    - Video ID, account name, subscribers, title (Korean and English)
+    - Release date, views, comment count, YouTube ID
+    - List of idols appearing in each video
+  
+  - **idols.json** - Contains information about the 7 idols featured in the study:
+    - Idol ID, name, gender, demographic background
+    - Accent type as described in the research
+    - List of videos the idol appears in
+  
+  - **findings.json** - Contains key statistics from the paper and aspect coding key:
+    - Sentiment distribution (positive: 88.1%, neutral: 10.6%, negative: 1.3%)
+    - Evaluation aspects distribution (socialAttractiveness: 33.6%, nativeness: 30.3%, etc.)
+    - Aspect coding key mapping between codes (a, b, c, etc.) and their meanings
+  
+  - **comments.json** - Processed comment data from the CSV files:
+    - Unique ID, video ID, original text, language (English/Korean)
+    - Sentiment (positive, neutral, negative, off-topic)
+    - Evaluation aspects (general, nativeness, motivation, etc.)
+    - Mentioned idols, quotes, translations for Korean comments
+    - Metadata including total comment count, source file, and last updated timestamp
 
-- **Data Processing Utilities**: Implemented comprehensive data processing utilities:
-  - parseCommentsCSV - Converts raw CSV data to structured JSON
-  - getCommentsByIdol - Filters comments by mentioned idol
-  - getCommentsByVideo - Filters comments by video source
-  - calculateSentimentDistribution - Analyzes sentiment distribution
-  - calculateAspectDistribution - Analyzes evaluation aspect distribution
-  - createSentimentAspectMatrix - Creates cross-tabulation of sentiment vs. aspect
-  - getKoreanCommentsWithTranslations - Extracts Korean comments with translations
-  - getAspectExamples - Gets example comments for each evaluation aspect
-  - getSentimentExamples - Gets example comments for each sentiment
-  - formatSentimentChartData - Formats data for SentimentChart component
-  - formatAspectChartData - Formats data for AspectChart component
+- **Data Processing Utilities**: Implemented comprehensive data processing utilities in `src/lib/utils/dataProcessing.js`:
+  - **Core Processing**:
+    - **parseCommentsCSV** - Converts raw CSV data to structured JSON with robust error handling
+  
+  - **Filtering Functions**:
+    - **getCommentsByIdol** - Filters comments by mentioned idol
+    - **getCommentsByVideo** - Filters comments by video source
+  
+  - **Analysis Functions**:
+    - **calculateSentimentDistribution** - Analyzes sentiment distribution with percentages
+    - **calculateAspectDistribution** - Analyzes evaluation aspect distribution with percentages
+    - **createSentimentAspectMatrix** - Creates cross-tabulation of sentiment vs. aspect
+  
+  - **Extraction Functions**:
+    - **getKoreanCommentsWithTranslations** - Extracts Korean comments with translations
+    - **getAspectExamples** - Gets example comments for each evaluation aspect
+    - **getSentimentExamples** - Gets example comments for each sentiment
+  
+  - **Visualization Functions**:
+    - **formatSentimentChartData** - Formats data for SentimentChart component with proper colors
+    - **formatAspectChartData** - Formats data for AspectChart component with proper colors
 
-- **Example Usage**: Created example code to demonstrate how to use the data processing utilities
+- **Data Processing Scripts**:
+  - **processRawData.js** - Processes the truncated dataset for testing
+  - **processFullData.js** - Processes the full dataset for production
+  - Added npm scripts: `npm run process-data` and `npm run process-full-data`
+
+- **Example Usage**: Created example code in `src/lib/utils/dataExample.js` to demonstrate how to use the data processing utilities
 
 ## What's Left to Build
 
 ### Phase 1: Foundation
 
-#### Process Raw Data
-- Use the utility functions to process the raw CSV data
-- Generate the comments.json file with structured data
-- Validate the processed data against the paper's findings
-- Create additional derived data files if needed
+#### Process Raw Data ✓
+- ✓ Fixed data processing utilities to handle edge cases and errors
+- ✓ Created scripts to process both truncated and full datasets
+- ✓ Added npm scripts for easy data processing
+- ✓ Successfully processed truncated dataset with 275 comments
+- ✓ Generated comments.json file with structured data
 
 #### Integrate Data with Components
 - Connect the processed data to the UI components
