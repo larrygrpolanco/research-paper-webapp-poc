@@ -218,16 +218,4 @@ The K-Pop Accent Web App follows a component-based architecture using SvelteKit,
    - Contextual links between components
    - Unified user journey
 
-## Scalability Considerations
 
-While this is a proof of concept with a simplified scope, the architecture includes considerations for future scalability:
-
-1. **Modular Component Design**: Components are designed to be reusable and composable, allowing for extension without refactoring.
-
-2. **Data Abstraction**: Data access is abstracted through stores and utility functions, making it possible to replace static JSON with API calls in the future.
-
-3. **Feature Isolation**: Features are isolated in their own routes and component hierarchies, allowing for independent development and testing.
-
-4. **Performance Patterns**: Lazy loading, code splitting, and efficient rendering patterns are established from the beginning to support growth.
-
-5. **Documentation**: Component APIs and data structures are documented to facilitate future development.

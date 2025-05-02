@@ -28,7 +28,7 @@ The K-Pop Accent Web App is in the early stages of development, currently in **P
 ### Project Infrastructure
 
 - **Repository Setup**: Basic repository structure is in place
-- **Configuration Files**: Core configuration files for SvelteKit, TypeScript, ESLint, and Prettier
+- **Configuration Files**: Core configuration files for SvelteKit, ESLint, and Prettier
 - **Project Documentation**: Memory bank established with comprehensive documentation
 
 ### Design System
@@ -42,7 +42,7 @@ The K-Pop Accent Web App is in the early stages of development, currently in **P
 
 ### Component Framework
 
-- **Core UI Components**: All core UI components implemented:
+- **Core UI Components**: All core UI components implemented/in progress:
   - Header.svelte - Responsive navigation with mobile menu support
   - Footer.svelte - Three-column layout with research information and navigation
   - VideoPlayer.svelte - YouTube integration with metadata display and timestamp navigation
@@ -58,8 +58,8 @@ The K-Pop Accent Web App is in the early stages of development, currently in **P
 ### Data Structure
 
 - **JSON Files**: Initial data files created based on research tables
-- **Data Models**: Basic TypeScript interfaces for data structures
-- **Placeholder Data**: Sample data for development purposes
+- **Data Models**: Basic data structures
+- **Placeholder Data**: Working on it now I have CSVs
 
 ## What's Left to Build
 
