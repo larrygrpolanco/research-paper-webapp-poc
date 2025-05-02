@@ -1,0 +1,204 @@
+2. Review of Literature
+2.1. Language Attitudes in Digital Spaces
+Since the seminal study by Lambert et al. (1960), which proposed the linguistic stereo‑
+type hypothesis emphasizing the role of speech patterns as influencing and shaping one’s
+social identity, an extensive body of research in linguistic stereotyping has emerged. Specif‑
+ically, the extant studies on linguistic stereotyping focus on listeners’ perceptions of differ‑
+ent accents and uncover generally negative views toward non‑native and/or non‑standard
+accents (e.g., Boyd, 2003; Brennan & Brennan, 1981; Grondelaers et al., 2019; Lambert, 1967;
+Pantos & Perkins, 2012; Ryan et al., 1977). For example, Brennan and Brennan (1981) ex‑
+plored the relationship between the level of accentedness in English spoken by Mexican
+American individuals, as assessed by native speakers of English, and the evaluative judg‑
+ments made by those raters regarding the accentedness. In their research, participants
+listened to audio recordings made by Mexican American speakers and then completed
+their evaluation questionnaires featuring eight pairs of bipolar adjectives (e.g., educated—
+uneducated). The results indicated that as raters perceived the speech as more accented,
+the status rating (i.e., social prestige) given was correspondingly lower. In a similar vein,
+Languages 2025, 10, 75 3 of 20
+Pantos and Perkins (2012) investigated the attitudes toward the speakers with a U.S. ac‑
+cent compared to those with a “foreign” accent (e.g., Chinese‑accented speech, Korean‑
+accented speech, etc.), discovering an implicit bias (i.e., individuals’ subconscious bias)
+favoring speakers with a U.S. accent.
+The research into language attitudes has further expanded to a phenomenon referred
+to as reverse linguistic stereotyping (RLS), where listeners’ pre‑existing biases about a
+speaker’s social group influence their interpretation of the speaker’s linguistic features
+(e.g., O. Kang & Rubin, 2009; O. Kang & Yaw, 2021; Kutlu, 2023; Rubin, 2012). O. Kang
+and Rubin (2009), for example, discovered that listeners often hold varying expectations
+based on the ethnicity of the speaker, which ultimately impacts their comprehension of
+the speech. By presenting photographs of speakers from two different ethnic backgrounds
+(Caucasian and Asian) in their experiment, the results indicated that the identical speech
+produced two different ratings depending on the photograph used; the speech accompa‑
+nied by a Caucasian photo received a higher rating than with an Asian photo. Similarly,
+Kutlu (2023) conducted a study comparing American and Indian English using visual stim‑
+uli (Caucasian and South Asian), and the results indicated that accentedness judgments
+increased when the speech was shown alongside South Asian visual stimuli. In addition
+to examining listeners’ pre‑existing biases, O. Kang and Yaw (2021) also incorporated lis‑
+teners’ backgrounds as an additional factor in their analysis of accented speech. In their
+research, the authors identified listeners’ backgrounds, specifically related to their famil‑
+iarity with different accents (e.g., studying abroad experience), and examined how this
+exposure influenced their perceptions of accented speech. The results indicated that listen‑
+ers who had greater exposure to accented speech generally provided more positive evalua‑
+tions of it. However, listeners with preconceived stereotypes about accented speech rated
+it as less prestigious and less socially appealing.
+The body of research regarding language attitudes toward differently accented speech,
+overall, has primarily concentrated on English and its various accents (e.g., Brennan &
+Brennan, 1981; O. Kang & Yaw, 2021; Pantos & Perkins, 2012; Ryan et al., 1977). It is not
+surprising considering the role of English as a global lingua franca and its widespread use
+across the globe. According to Kachru (1992), English dialects and accents can be classi‑
+fied into three concentric circles: (1) the inner circle, representing native English‑speaking
+countries (e.g., the United States, the United Kingdom, Australia, New Zealand, etc.);
+(2) the outer circle, including countries where English is used as an official language (e.g.,
+India, Philippines, Nigeria, Singapore, etc.); (3) the expanding circle, encompassing coun‑
+tries where English is used as a foreign language (e.g., South Korea, China, Japan, France,
+etc.). In light of this, previous studies have shown that listeners, which include both native
+English speakers and those who speak English as a second or foreign language, often hold
+negative perceptions toward speakers whose accents differ from those of the inner circle,
+which can ultimately foster stereotypes toward non‑native English accents (e.g., Ahn &
+Kang, 2017; Hendriks et al., 2018, 2023). Specifically, the research conducted by Ahn and
+Kang (2017) illustrates how these stereotypes create a fallacious association of non‑native
+accents with various extralinguistic factors, such as social status, intelligence, academic
+achievements, gender, and ethnicity. Although several scholars have implemented listener
+training as an effort to reduce this stereotype (e.g., O. Kang, 2015; Lindemann et al., 2016;
+Manohar & Appiah, 2016), the preference for a native‑like accent remains widespread.
+While extensive empirical research has explored individuals’ perceptions and atti‑
+tudes on various accents, the rise of digital communication has further broadened this
+field of study, encouraging researchers to examine accent stereotypes in digital spaces
+(e.g., Aslan & Vásquez, 2018; Chen & Herring, 2024; Cutler, 2016, 2020; Rymes & Leone‑
+Pizzighella, 2018). Among the myriad online platforms, social media sites (e.g., YouTube,
+Languages 2025, 10, 75 4 of 20
+Facebook, and Bilibili) have widely been investigated as these platforms allow users to
+create and share content on a wide range of topics, including language. As Androutsopou‑
+los (2015) argues, user‑generated content regarding language results in context collapse,
+where diverse language attitudes toward multiple language varieties are expressed by in‑
+dividuals from various social backgrounds. In this context, social media platforms serve
+as dynamic spaces for enregisterment of language varieties—a process by which certain
+linguistic and/or non‑linguistic features become social indexes (Agha, 2003, 2005; Cutler,
+2016). Furthermore, the inherently interactive and diaglogic nature of platforms plays a
+crucial role in influencing public attitudes toward specific language varieties and accents
+(Heyd, 2016).
+For instance, Aslan and Vásquez (2018) investigated metalinguistic comments made
+by online users on two YouTube videos that discussed a “non‑standard” way of speaking
+English by a teenage girl in the U.S., uncovering how viewers evaluate the speech and con‑
+nect it to various social categories (e.g., race, region, education, etc.). In their research, the
+“non‑standard” speech was largely viewed negatively, often linked to lower‑status social
+categories, “ghetto” or “hood”, highlighting the widespread prescriptive mindset within
+society. With a more concentrated focus on accent, Cutler (2020) examined four YouTube
+videos that featured “How to Talk Like a New Yorker”, focusing on the metalinguistic com‑
+ments made by individuals regarding the New York accent. By analyzing users’ comments
+on these accent‑focused videos, the results illustrated that the New York accent, which was
+historically tied to negative stereotypes, is now viewed in a somewhat favorable manner,
+indicating a shift in the perceptions of the New York accent. Along similar lines, Chen
+and Herring (2024) analyzed attitudes toward non‑native Mandarin accents by analyzing
+online comments directed at two non‑native Mandarin speakers on Bilibili (a popular Chi‑
+nese online video platform). Their findings indicated a general negative perception of a
+non‑native speaker who frequently made pronunciation mistakes.
+In summary, scholars in this area have highlighted the important role of social media
+platforms in shaping and reflecting individuals’ attitudes toward various pronunciations
+and accents. According to Chen and Herring (2024), social media platforms not only reflect
+the prevailing language attitudes and ideologies but also have the potential to reinforce
+existing biases and perceptions, given their widespread use in contemporary society. Thus,
+the current study seeks to gain a deeper understanding of current attitudes toward English
+inner circle accents in our globalized world. Our focus is on analyzing comments made by
+online users in response to videos that featured K‑pop idols speaking English with inner
+circle accents. To provide a context for our investigation, we outline the role of English in
+South Korea, especially in relation to the K‑pop industry, in the following section.
+2.2. English in South Korea
+Building on the global perspective of language attitudes influenced by digital environ‑
+ments, it is crucial to explore how these interactions manifest in specific cultural contexts,
+such as South Korea (hereafter Korea), where English serves not merely as a means of
+communication but also as a marker of social identity. In Korea, one of the countries in
+the expanding circle, English proficiency is pursued not only for communicative and prac‑
+tical purposes but also for its social indexicality as a class marker, allowing the speaker to
+showcase their connection to cosmopolitan (Lee, 2014). Furthermore, as Derwing (2003)
+points out, achieving a perfect native‑like accent in English remains a desirable outcome
+for learners in numerous countries within the expanding circle (i.e., English as a foreign
+language (EFL) contexts). Consequently, it is not surprising that Korean L2 learners per‑
+ceive English accents from the inner circle as more legitimate than English spoken with
+a Korean accent. For instance, Butler (2007) explored the impacts of accents performed
+Languages 2025, 10, 75 5 of 20
+by Korean elementary school teachers through experiments assessing students’ percep‑
+tions of American‑accented English versus Korean‑accented English. In his examination
+of the potential differences in students’ learning outcomes influenced by teachers’ varying
+English accents, the results indicated that there was no significant difference in students’
+performance. Nonetheless, surprisingly, the research revealed a significant difference in
+student’s attitudes toward the two distinct English accents. Specifically, students believed
+that speakers of American‑accented English excelled in their pronunciation and confidence
+when using English. Similarly, McDonald and McRae (2010) examined the attitudes of Ko‑
+rean English teachers toward a local variation of English, referred to as “Konglish”. The
+results indicated that a majority of teachers perceived Konglish as deviating from standard
+English, thus labeling it an incorrect way of practicing English.
+Although earlier studies have shown that the perceptions of Korean L2 speakers to‑
+ward local English varieties (e.g., Korean accented English) have progressed to appreciate
+the value of non‑inner circle English accents (e.g., Ahn, 2014; Sung, 2019), the preference of
+Korean L2 speakers toward inner circle English accents remains pervasive (e.g., Ahn et al.,
+2020; Byun, 2016). For instance, Byun (2016), through her qualitative research with under‑
+graduate students in Korea, discovered that Korean L2 learners hold complex perspectives
+regarding native‑like accents. While students acknowledged that the English language is
+no longer limited to English‑speaking countries, they also conveyed a strong preference
+for learning English from native speakers from the inner circle countries. Ahn et al. (2020)
+corroborated these findings in their analysis of perceptions of native speakers in Korean
+news and social media, revealing a prevailing belief that native speakers of English should
+serve as role models for learning English. In summary, while there is a growing recogni‑
+tion of non‑native varieties as valid forms of English varieties, the deep‑rooted preference
+for native speakers, particularly from the inner circle, highlights the complex attitudes of
+Korean L2 speakers toward English in today’s context.
+2.3. K‑Pop Industry in Korea and Its Global Impact
+The unique role of English as both a lingua franca and a cultural capital has also been
+evident in the K‑pop industries. K‑pop, an abbreviation for Korean popular music, has
+gained a growing number of global fans thanks to its unique characteristics, including cap‑
+tivating melodies and beats, impressive choreography, and the visual appeal of its artists.
+Although K‑pop encompasses a broad spectrum of sub‑genres within the music scene of
+Korea, it is primarily associated with K‑pop idol groups, such as BTS and New Jeans, which
+have emerged as the most popular sub‑genres among the others. These idol groups are
+typically created and managed by production companies, which play an important role in
+various ways—from the selection of the members to the promotional activities.
+In the early days of K‑pop, idol groups were predominantly made up of Korean mem‑
+bers (e.g., FIN.K.L, Wonder Girls). However, as the popularity of K‑pop idols expanded
+beyond Korea, production companies began to recruit talent from various countries to en‑
+hance the group’s connectivity to the world, leading to over 30 foreign idols debuting in
+2021 (Min, 2024). The increasing global popularity of K‑pop has also led to a change in com‑
+munication styles among idols. With an expanding number of international fans, many
+K‑pop idols, whether they are Korean or foreign, have begun to speak English in many
+events outside of Korea, including interviews, concerts, and promotional events. This abil‑
+ity to communicate in English has become a charming point for international fans, giving
+a sense of connection and accessibility (Octaviani & Yamin, 2020). Furthermore, the idols’
+frequent use of English has also encouraged fans in EFL settings to learn the language. In
+this regard, Faiza (2020) explored the K‑pop community on Twitter (now called X), primar‑
+ily focusing on fans who use English as a foreign language. The findings showed that fans
+Languages 2025, 10, 75 6 of 20
+were inspired to learn English while engaging with K‑pop content and communicating
+with other fans around the world.
+Faiza (2020) offers invaluable insights into the impact of K‑pop culture on English
+language learning, highlighting the ways in which this musical genre promotes engage‑
+ment with English in EFL contexts. However, it still remains unknown how the English‑
+speaking practices of K‑pop idol members are perceived and how this specifically influ‑
+ences their fans and learners of English. As K‑pop continues to gain global popularity and
+maintains abundant digital activities across various platforms (e.g., Jin, 2021, 2024; Jung,
+2014), it is important to investigate the effects of this phenomenon. Understanding how
+idol members‘ English proficiency, accents, and speaking styles are perceived by their au‑
+dience could provide valuable perspectives.
+2.4. Current Study
+Language attitudes, particularly those pertaining to the speaker’s accent, have been
+extensively studied across various varieties and contexts. By broadening the research
+scope to digital spaces, the existing body of work has yielded new insights, showcasing
+the language ideologies that manifest through different online platforms. Regarding lan‑
+guage ideologies related to English varieties, previous studies consistently highlighted a
+strong preference for either the “standard” accent or the inner circle accent (e.g., Brennan
+& Brennan, 1981; Hendriks et al., 2018; Pantos & Perkins, 2012). This trend has also been
+observed in Korea, where English serves as a symbol of social status (Lee, 2014). As one of
+the expanding circle countries where English is used as a foreign language, several studies
+have indicated that Korean L2 learners prefer inner circle English accents (e.g., Ahn et al.,
+2020; Butler, 2007; Byun, 2016). In this regard, this study aims to deepen our understanding
+of how the English accents of K‑pop idols are perceived and evaluated in digital contexts.
+Considering the growing global influence of the K‑pop industry and the various digital
+activities associated with it (e.g., Jin, 2021, 2024; Jung, 2014), digital space is regarded as
+a valuable research area that can illustrate various language ideologies regarding English
+accents both within and outside Korea. Specifically, our research investigates how online
+users evaluate the English accents of K‑pop idols, focusing on the following: (1) affect (i.e.,
+positive, negative, neutral); (2) other social aspects related to the corresponding affect (e.g.,
+social attractiveness, (non)‑nativeness). Through the analysis of online users’ metalinguis‑
+tic comments regarding K‑pop idols’ English accents, our objective is to uncover the online
+discourse surrounding linguistic stereotyping within K‑pop culture. This study, therefore,
+aims to contribute to the understanding of language attitudes in a contemporary digital
+space and highlight the dynamic interplay between K‑pop idols’ use of English and how
+online users perceive it in the globalized context of K‑pop.

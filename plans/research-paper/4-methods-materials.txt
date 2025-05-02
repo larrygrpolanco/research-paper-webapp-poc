@@ -1,0 +1,640 @@
+Materials and Methods
+3.1. Data Collection
+Data were collected from YouTube using purposive sampling. In terms of our sam‑
+pling procedures, we first employed the YouTube search engine with four key search terms
+in Korean in order to collect videos featuring idols’ performance of English accents and/or
+commentaries on their accents. The key terms employed in our search include “영어” (En‑
+glish), “발음” (literally, pronunciation; figuratively, accent), “아이돌” (idol), and “모음”
+(collection or compilation). We used the above search key terms as online users very likely
+offer metalinguistic comments on idols’ English accents in response to the video content,
+given both the focus of the videos (e.g., idols’ accents), as well as the participatory affor‑
+dances of YouTube (Aslan & Vásquez, 2018). In addition, as YouTube allows the user to
+“filter” the search result generated based on criteria such as upload date (e.g., last hour,
+anguages 2025, 10, x FOR PEER REVIEW 7 of 21
+participatory affordances of YouTube (Aslan & Vásquez, 2018). In addition, as YouTube
+Languages 2025, 10, x FOR PEER REVIEW 7 of 21
+Languages 2025, 10, x FOR PEER REVIEW 7 of 2
+participatory affordances of YouTube (Aslan & Vásquez, 2018). In addition, as YouTube
+participatory affordances of YouTube (Aslan & Vásquez, 2018). In addition, as YouTube
+allows the user to “filter” the search result generated based on criteria such as upload date
+allows the user to “filter” the search result generated based on criteria such as upload date
+allows the user to “filter” the search result generated based on criteria such as upload date
+(e.g., last hour, this week), relevance, view count, and rating, we selected relevance as a
+(e.g., last hour, this week), relevance, view count, and rating, we selected relevance as a
+(e.g., last hour, this week), relevance, view count, and rating, we selected relevance as a
+Languages 2025, 10, 75 7 of 20
+sorting criterion in order to retrieve videos that are most relevant to K-pop idols’ English
+participatory affordances of YouTube (Aslan & Vásquez, 2018). In addition, as YouTube
+sorting criterion in order to retrieve videos that are most relevant to K-pop idols’ English
+sorting criterion in order to retrieve videos that are most relevant to K-pop idols’ English
+participatory affordances of YouTube (Aslan & Vásquez, 2018). In addition, as YouTube
+participatory affordances of YouTube (Aslan & Vásquez, 2018). In addition, as YouTube
+accents. Among the videos in the returned results, we sampled the most popular videos
+allows the user to “filter” the search result generated based on criteria such as upload date
+accents. Among the videos in the returned results, we sampled the most popular videos
+accents. Among the videos in the returned results, we sampled the most popular videos
+allows the user to “filter” the search result generated based on criteria such as upload date
+allows the user to “filter” the search result generated based on criteria such as upload date
+as indicated by the number of likes, comments, and views the videos received. After
+(e.g., last hour, this week), relevance, view count, and rating, we selected relevance as a
+as indicated by the number of likes, comments, and views the videos received. After
+as indicated by the number of likes, comments, and views the videos received. After
+(e.g., last hour, this week), relevance, view count, and rating, we selected relevance as a
+this week), relevance, view count, and rating, we selected relevance as a sorting criterion
+(e.g., last hour, this week), relevance, view count, and rating, we selected relevance as a
+screening the returned results based on the above criteria, we chose to sample the five
+sorting criterion in order to retrieve videos that are most relevant to K-pop idols’ English
+screening the returned results based on the above criteria, we chose to sample the five
+screening the returned results based on the above criteria, we chose to sample the five
+sorting criterion in order to retrieve videos that are most relevant to K-pop idols’ English
+in order to retrieve videos that are most relevant to K‑pop idols’ English accents. Among
+sorting criterion in order to retrieve videos that are most relevant to K-pop idols’ English
+most popular videos as the total numbers of comments under these videos exceeded 4584,
+accents. Among the videos in the returned results, we sampled the most popular videos
+most popular videos as the total numbers of comments under these videos exceeded 4584,
+most popular videos as the total numbers of comments under these videos exceeded 4584,
+accents. Among the videos in the returned results, we sampled the most popular videos
+the videos in the returned results, we sampled the most popular videos as indicated by the
+accents. Among the videos in the returned results, we sampled the most popular video
+which reached the sampling size in previous studies concerning online users’ metalin-
+as indicated by the number of likes, comments, and views the videos received. After
+which reached the sampling size in previous studies concerning online users’ metalin-
+which reached the sampling size in previous studies concerning online users’ metalin-
+as indicated by the number of likes, comments, and views the videos received. After
+number of likes, comments, and views the videos received. After screening the returned
+as indicated by the number of likes, comments, and views the videos received. Afte
+guistic comments on YouTube. For example, in Cutler (2020), a total of 2649 comments
+screening the returned results based on the above criteria, we chose to sample the five
+guistic comments on YouTube. For example, in Cutler (2020), a total of 2649 comments
+guistic comments on YouTube. For example, in Cutler (2020), a total of 2649 comments
+screening the returned results based on the above criteria, we chose to sample the five
+results based on the above criteria, we chose to sample the five most popular videos as the
+screening the returned results based on the above criteria, we chose to sample the five
+posted under four videos were sampled. For this reason, we consider the first five videos,
+most popular videos as the total numbers of comments under these videos exceeded 4584,
+posted under four videos were sampled. For this reason, we consider the first five videos,
+posted under four videos were sampled. For this reason, we consider the first five videos,
+most popular videos as the total numbers of comments under these videos exceeded 4584,
+total numbers of comments under these videos exceeded 4584, which reached the sampling
+most popular videos as the total numbers of comments under these videos exceeded 4584
+with their considerable numbers of comments and views, to be sufficient for us to con-
+which reached the sampling size in previous studies concerning online users’ metalin-
+with their considerable numbers of comments and views, to be sufficient for us to con-
+with their considerable numbers of comments and views, to be sufficient for us to con-
+which reached the sampling size in previous studies concerning online users’ metalin-
+size in previous studies concerning online users’ metalinguistic comments on YouTube.
+which reached the sampling size in previous studies concerning online users’ metalin
+struct a rich dataset consisting of metalinguistic comments on idols’ English accents for
+guistic comments on YouTube. For example, in Cutler (2020), a total of 2649 comments
+struct a rich dataset consisting of metalinguistic comments on idols’ English accents for
+struct a rich dataset consisting of metalinguistic comments on idols’ English accents for
+guistic comments on YouTube. For example, in Cutler (2020), a total of 2649 comments
+For example, in Cutler (2020), a total of 2649 comments posted under four videos were
+guistic comments on YouTube. For example, in Cutler (2020), a total of 2649 comment
+the following data analysis.
+posted under four videos were sampled. For this reason, we consider the first five videos,
+the following data analysis.
+the following data analysis.
+posted under four videos were sampled. For this reason, we consider the first five videos,
+sampled. For this reason, we consider the first five videos, with their considerable num‑
+posted under four videos were sampled. For this reason, we consider the first five videos
+We then sampled users’ comments in relation to accents under the five chosen videos.
+with their considerable numbers of comments and views, to be sufficient for us to con-
+We then sampled users’ comments in relation to accents under the five chosen videos.
+with their considerable numbers of comments and views, to be sufficient for us to con-
+We then sampled users’ comments in relation to accents under the five chosen videos.
+bers of comments and views, to be sufficient for us to construct a rich dataset consisting of
+with their considerable numbers of comments and views, to be sufficient for us to con
+In this process, we eliminated one video from the data analysis as it did not have any
+struct a rich dataset consisting of metalinguistic comments on idols’ English accents for
+In this process, we eliminated one video from the data analysis as it did not have any
+In this process, we eliminated one video from the data analysis as it did not have any
+struct a rich dataset consisting of metalinguistic comments on idols’ English accents for
+metalinguistic comments on idols’ English accents for the following data analysis.
+struct a rich dataset consisting of metalinguistic comments on idols’ English accents fo
+accent-related comments. After data cleaning, users’ comments posted in response to four
+the following data analysis.
+accent-related comments. After data cleaning, users’ comments posted in response to four
+the following data analysis.
+accent-related comments. After data cleaning, users’ comments posted in response to four
+We then sampled users’ comments in relation to accents under the five chosen videos.
+the following data analysis.
+videos featuring K-pop idols’ English accents were analyzed in our study. Table 1 shows
+We then sampled users’ comments in relation to accents under the five chosen videos.
+videos featuring K-pop idols’ English accents were analyzed in our study. Table 1 shows
+videos featuring K-pop idols’ English accents were analyzed in our study. Table 1 shows
+In this process, we eliminated one video from the data analysis as it did not have any accent‑
+We then sampled users’ comments in relation to accents under the five chosen videos.
+We then sampled users’ comments in relation to accents under the five chosen videos
+the metadata of the four videos, including the name of the account, the number of sub-
+In this process, we eliminated one video from the data analysis as it did not have any
+the metadata of the four videos, including the name of the account, the number of sub-
+the metadata of the four videos, including the name of the account, the number of sub-
+related comments. After data cleaning, users’ comments posted in response to four videos
+In this process, we eliminated one video from the data analysis as it did not have any
+In this process, we eliminated one video from the data analysis as it did not have any
+scribers of the account, the video title, the released data of the video, the number of views
+accent-related comments. After data cleaning, users’ comments posted in response to four
+scribers of the account, the video title, the released data of the video, the number of views
+scribers of the account, the video title, the released data of the video, the number of views
+featuring K‑pop idols’ English accents were analyzed in our study. Table 1 shows the
+accent-related comments. After data cleaning, users’ comments posted in response to four
+accent-related comments. After data cleaning, users’ comments posted in response to fou
+of the video and the number of comments of the video. In addition, we present the demo-
+videos featuring K-pop idols’ English accents were analyzed in our study. Table 1 shows
+of the video and the number of comments of the video. In addition, we present the demo-
+of the video and the number of comments of the video. In addition, we present the demo-
+metadata of the four videos, including the name of the account, the number of subscribers
+videos featuring K-pop idols’ English accents were analyzed in our study. Table 1 shows
+videos featuring K-pop idols’ English accents were analyzed in our study. Table 1 show
+graphic information of the idols who appeared in the videos and their accents, as labeled
+the metadata of the four videos, including the name of the account, the number of sub-
+graphic information of the idols who appeared in the videos and their accents, as labeled
+of the account, the video title, the released data of the video, the number of views of the
+graphic information of the idols who appeared in the videos and their accents, as labeled
+the metadata of the four videos, including the name of the account, the number of sub-
+the metadata of the four videos, including the name of the account, the number of sub
+by the content creators, in Table 2.
+scribers of the account, the video title, the released data of the video, the number of views
+by the content creators, in Table 2.
+by the content creators, in Table 2.
+scribers of the account, the video title, the released data of the video, the number of views
+video and the number of comments of the video. In addition, we present the demographic
+scribers of the account, the video title, the released data of the video, the number of view
+of the video and the number of comments of the video. In addition, we present the demo-
+information of the idols who appeared in the videos and their accents, as labeled by the
+Table 1. Metadata of the focal videos.
+of the video and the number of comments of the video. In addition, we present the demo-
+of the video and the number of comments of the video. In addition, we present the demo
+graphic information of the idols who appeared in the videos and their accents, as labeled
+Table 1. Metadata of the focal videos.
+Table 1. Metadata of the focal videos.
+content creators, in Table 2.
+graphic information of the idols who appeared in the videos and their accents, as labeled
+graphic information of the idols who appeared in the videos and their accents, as labeled
+by the content creators, in Table 2.
+Account The Number
+by the content creators, in Table 2.
+by the content creators, in Table 2.
+The Num-
+The Num-
+No. Account The Number
+No. Account The Number
+Table 1. Metadata of the focal videos.
+of Subscribers The Title of the Video Released
+The Num-
+The Num-
+The Num-
+The Num-
+ber of
+Table 1. Metadata of the focal videos.
+of Subscribers The Title of the Video Released
+of Subscribers The Title of the Video Released
+ber of Com-
+Date
+ber of
+ber of
+ber of Com-
+ber of Com-
+Table 1. Metadata of the focal videos.
+Table 1. Metadata of the focal videos.
+Date
+Views
+Date
+ments
+ments
+No. The Num-
+ber of Com
+ments
+431
+2 3 No. No. Account Account The Number
+No. The Number
+of Subscribers Account The Number
+of Subscribers Account The Number
+알고 들으면 더 신기한 아이돌
+알고 들으면 더 신기한 아이돌
+The Title of the Video 알고 들으면 더 신기한 영어발음 특징 (RM, JOSHUA,
+of Subscribers The Title of the Video The Title of the Video Released
+영어발음 특징 (RM, JOSHUA,
+of Subscribers The Title of the 영어발음 특징 (RM, JOSHUA,
+아이돌
+Released
+Date
+Video Released
+Views
+The
+The Num-
+Number of
+The Num-
+The Num-
+ber of
+Views
+Released
+ber of Com-
+ber of
+Views
+ments
+The
+Number of
+The Num-
+The Num-
+Comments
+ber of
+ber of Com-
+Doyouram-Every-
+1 day K-Culture
+1
+21.6 M (mil-
+Doyouram-Every-
+Doyouram‑
+lion)
+day K-Culture
+Everyday
+K‑Culture
+1 Doyouram-Every-
+21.6 M (mil-
+day K-Culture
+lion)
+21.6 M (million)
+ROSÉ, JENNIE, WENDY, MARK)
+알고 들으면 더 신기한 아이돌 영어발음
+ROSÉ, JENNIE, WENDY, MARK)
+ROSÉ, JENNIE, WENDY, MARK)
+[ENG]
+알고 들으면 더 신기한 아이돌
+21.6 M (mil-
+특징 (RM, JOSHUA, ROSÉ, JENNIE,
+[ENG]
+16 August
+[ENG]
+알고 들으면 더 신기한 아이돌
+알고 들으면 더 신기한 아이돌
+[Idol English pronunciation charac-
+영어발음 특징 (RM, JOSHUA,
+lion)
+WENDY, MARK) [ENG]
+2021 [Idol English pronunciation charac-
+[Idol English pronunciation charac-
+영어발음 특징 (RM, JOSHUA,
+teristics that is more surprising if
+[Idol English pronunciation
+영어발음 특징 (RM, JOSHUA,
+ROSÉ, JENNIE, WENDY, MARK)
+teristics that is more surprising if
+ROSÉ, JENNIE, WENDY, MARK)
+teristics that is more surprising if
+you know it (RM, JOSHUA, ROSÉ,
+characteristics that is more surprising if
+ROSÉ, JENNIE, WENDY, MARK)
+Date
+Date
+16 August
+203,435 2021 16 August
+2021 Views
+Date
+ments
+Views
+16 August
+431
+2021 203,435 203,435 203,435 Views
+ments
+431
+431
+1 Doyouram-Every-
+1 2 2 Doyouram-Every-
+day K-Culture
+day K-Culture
+JTBC
+JTBC Voyage 349 Voyage 21.6 M (mil-
+1 Doyouram-Every-
+21.6 M (mil-
+lion)
+day K-Culture
+lion)
+M
+349 M
+JTBC Voyage 349 M
+2 JTBC Voyage 349 M
+[ENG]
+you know it (RM, JOSHUA, ROSÉ,
+21.6 M (mil-
+you know it (RM, JOSHUA, ROSÉ,
+[ENG]
+you know it (RM, JOSHUA, ROSÉ,
+[ENG]
+JENNIE, WENDY, MARK) [ENG]]
+[Idol English pronunciation charac-
+JENNIE, WENDY, MARK) [ENG]]
+JENNIE, WENDY, MARK) [ENG]]
+lion)
+JENNIE, WENDY, MARK) [ENG]]
+♨핫클립♨ 거침없는 영어실력 뽐낸
+[Idol English pronunciation charac-
+[Idol English pronunciation charac-
+teristics that is more surprising if
+♨핫클립♨ 거침없는 영어실력 뽐낸
+핫클립
+♨핫클립♨ 거침없는 영어실력 뽐낸
+거침없는 영어실력 뽐낸
+레드벨벳 웬디 (Red Velvet
+teristics that is more surprising if
+teristics that is more surprising if
+you know it (RM, JOSHUA, ROSÉ,
+레드벨벳 웬디 (Red Velvet WENDY)
+레드벨벳 웬디 (Red Velvet
+레드벨벳 웬디 (Red Velvet
+you know it (RM, JOSHUA, ROSÉ,
+(발음도 이뻐
+WENDY) (발음도 이뻐♥)
+you know it (RM, JOSHUA, ROSÉ,
+) #스테이지K
+JENNIE, WENDY, MARK) [ENG]]
+WENDY) (발음도 이뻐♥)
+WENDY) (발음도 이뻐♥)
+JENNIE, WENDY, MARK) [ENG]]
+#스테이지K #JTBC봐야지
+JENNIE, WENDY, MARK) [ENG]]
+#JTBC봐야지
+♨핫클립♨ 거침없는 영어실력 뽐낸
+[
+#스테이지K #JTBC봐야지
+#스테이지K #JTBC봐야지
+Red Velvet WENDY
+♨핫클립♨ 거침없는 영어실력 뽐낸
+Hot Clip
+♨핫클립♨ 거침없는 영어실력 뽐낸
+[♨ Hot Clip♨ Red Velvet WENDY
+레드벨벳 웬디 (Red Velvet
+who boasted her fluent English skills
+[♨ Hot Clip♨ Red Velvet [♨ Hot Clip♨ Red Velvet WENDY
+레드벨벳 웬디 (Red Velvet
+레드벨벳 웬디 (Red Velvet
+who boasted her fluent English
+WENDY) (발음도 이뻐♥)
+(Pronunciation is pretty
+) #StageK
+who boasted her fluent English
+who boasted her fluent English
+WENDY) (발음도 이뻐♥)
+WENDY) (발음도 #JTBC]
+skills (Pronunciation is pretty♥)
+16 August
+16 August
+2021 203,435 431
+2021 7 April 2019 7 April 2019 4,143,521 WENDY
+이뻐♥)
+16 August
+2021 203,435 4,143,521 1815
+7 April 2019 4,143,521 7 April 2019 4,143,521 203,435 431
+1815
+1815
+2 3 영크릿 | Young
+3 Cret JTBC Voyage 2 영크릿 |
+Young Cret 영크릿 | Young
+Cret 20.9 349 M
+JTBC Voyage 349 M
+JTBC Voyage 뉴질랜드 20.9 M
+3 영크릿 | Young
+M
+Cret 20.9 M
+20.9 M
+#스테이지K #JTBC봐야지
+skills (Pronunciation is skills (Pronunciation is pretty♥)
+#스테이지K #JTBC봐야지
+[BLACK PINK]블랙핑크 제니 영어
+#스테이지K #JTBC봐야지
+#StageK #JTBC]
+349 M
+[♨ Hot Clip♨ Red Velvet WENDY
+#StageK #JTBC]
+뉴질랜드 발음 VS 로제 호주발음
+#StageK #JTBC]
+[♨ Hot Clip♨ Red Velvet WENDY
+[BLACK PINK]블랙핑크 제니 영어
+[♨ Hot Clip♨ Red Velvet WENDY
+who boasted her fluent English
+[BLACK PINK]블랙핑크 제니 영어
+비교해보자 (영어공부|ENG SUB)
+[BLACK PINK]블랙핑크 제니 영어
+who boasted her fluent English
+발음 VS 로제 호주발음
+who boasted her fluent English
+skills (Pronunciation is pretty♥)
+[[BLACK PINK] Let’s compare
+뉴질랜드 발음 VS 로제 호주발음
+뉴질랜드 발음 VS 로제 호주발음
+비교해보자 (영어공부|ENG SUB)
+skills (Pronunciation is pretty♥)
+skills (Pronunciation is pretty♥)
+BLACKPINK Jennie’s English New
+#StageK #JTBC]
+비교해보자 (영어공부|ENG SUB)
+비교해보자 (영어공부|ENG SUB)
+#StageK #JTBC]
+[[BLACK PINK] Let’s compare
+Zealand pronunciation vs Rosé’s
+#StageK #JTBC]
+[BLACK PINK]블랙핑크 제니 영어
+[[BLACK PINK] Let’s compare
+[[BLACK PINK] Let’s compare
+[BLACK PINK]블랙핑크 제니 영어
+Australian pronunciation. (English
+[BLACK PINK]블랙핑크 제니 영어
+BLACKPINK Jennie’s English New
+뉴질랜드 발음 VS 로제 호주발음
+BLACKPINK Jennie’s English New
+BLACKPINK Jennie’s English New
+study|ENG SUB)]
+뉴질랜드 발음 VS 로제 호주발음
+뉴질랜드 발음 VS 로제 호주발음
+pretty♥)
+7 April 2019 4,143,521 1815
+6 July 2020 6 July 2020 1,887,408 7 April 2019 4,143,521 7 April 2019 1,887,408 1232
+6 July 2020 1,887,408 6 July 2020 1,887,408 4,143,521 1815
+1232
+1232
+3 4
+영크릿 | Young
+Cret 영크릿 | Young
+Cret 3 영크릿 | Young
+20.9 M
+Cret 20.9 M
+Zealand pronunciation vs Rosé’s
+비교해보자 (영어공부|ENG SUB)
+[BLACKPINK, STRAY KIDS] 블랙핑크
+Zealand pronunciation vs Rosé’s
+Zealand pronunciation vs Rosé’s
+비교해보자 (영어공부|ENG SUB)
+비교해보자 (영어공부|ENG SUB)
+로제 영어 VS 스트레이키즈 필릭스 영어
+[[BLACK PINK] Let’s compare
+20.9 M
+[[BLACK PINK] Let’s compare
+원어민 실화냐? (영어공부|ENG SUB)
+[[BLACK PINK] Let’s compare
+BLACKPINK Jennie’s English New
+BLACKPINK Jennie’s English New
+[[BLACKPINK, STRAY KIDS]
+BLACKPINK Jennie’s English New
+Zealand pronunciation vs Rosé’s
+BLACKPINK Rose English VS Stray
+Zealand pronunciation vs Rosé’s
+Zealand pronunciation vs Rosé’s
+Kids FELIX English native speaker, is it
+real? (English study|ENG SUB)]
+6 July 2020 1,887,408 1232
+18 July 2020 6 July 2020 6 July 2020 1,887,408 699,728 1232
+1,887,408 1106
+431
+1815
+1815
+1232
+1232
+Languages 2025, 10, 75 8 of 20
+Table 2. Idols and their accents described in the video.
+No. Idols’
+Names Gender Demographic Background Accents Described
+in the Video
+1 Joshua Male Born and raised in the US. Valley girl accent
+2 Mark Male Born and raised in Canada New York accent
+3 Wendy Female
+Born in Korea, moved to
+Canada when she was
+11 years old.
+American accent
+4 Rosé Female
+Born in New Zealand,
+moved to Australia when
+she was 7 years old.
+Born in Korea, studied
+Australian accent
+5 Jennie Female
+abroad in New Zealand
+when she was 9 years old
+and stayed there for
+five years
+New Zealand
+accent
+6 RM Male Born and raised in Korea Undefined
+7 Felix Male Born and raised in Australia Australian accent
+In the four videos, we first manually extracted all comments posted under those
+videos (n = 4584), and we reviewed the content of the comments to exclude comments
+that were not metalinguistic descriptions or discussion focusing on idols’ accents. To be
+clear, our consideration of metalinguistic comments aligns with Jaworski et al. (2004, p. 3),
+who define metalinguistic comments as those that express “‘common sense’ understand‑
+ings of how language works, what it is usually like, what certain ways of speaking con‑
+note and imply, what they ought to be like”. Out of 4584 comments, 602 were identified
+as metalinguistic after screening the data. In them, we identified 197 (32.7%) as off‑topic
+comments (Figure 1), as the evaluation is not directly focused on the idols’ accents but
+on other language‑related aspects, such as grammar knowledge, lexical choices, capability
+Languages 2025, 10, x FOR PEER REVIEW 9 of 21
+of comprehending English, and so forth. Although our primary analytic goal is to exam‑
+ine explicitly accent‑related metalinguistic comments, we also take off‑topic instances into
+account in our analysis, as these “off‑topic” metalinguistic comments are also motivated
+by videos featuring commentaries on the idols’ English accents and provide insights into
+speakers of English. For this reason, few idols who are non-native English speakers were
+online users’ perceptions toward idols’ linguistic performances. With this in mind, we ad‑
+subject to evaluation in our dataset.
+dress the off‑topic comments as well to examine how online users’ evaluation of the idols’
+Regarding the language used in the comments, out of the dataset of 602 comments,
+speech may overlap with other aspects of language (e.g., grammar).
+446 were written in English, while 156 were in Korean, as shown in Table 3.
+Figure 1. The percentage of metalinguistic comments.
+Figure 1. The percentage of metalinguistic comments.
+Table 3. Metalinguistic comments written in different languages.
+Metalinguistic Comments
+(n = 602)
+La ua e of the Co e t E li h Ko ea
+Languages 2025, 10, 75 9 of 20
+In terms of idols whose English accents are subject to evaluation in the videos sampled,
+it appears that the content creators overwhelmingly focus on idols who were either English
+native speakers (Joshua, Mark, Rosé, and Felix) or lived in an English‑speaking country for
+a long time (Jennie and Wendy), while only one (RM) who was born and raised in Korea.
+However, the “skewness” toward English native speakers appears to be inherent in the
+dataset. Specifically, our initial consideration was to sample popular commentary videos
+on idols’ English accents regardless of the English varieties being evaluated in the videos.
+The returned search results showed that the majority of content creators who produced the
+focal type of video focused on idols who were somehow native speakers of English. For
+this reason, few idols who are non‑native English speakers were subject to evaluation in
+our dataset.
+Regarding the language used in the comments, out of the dataset of 602 comments,
+446 were written in English, while 156 were in Korean, as shown in Table 3.
+Table 3. Metalinguistic comments written in different languages.
+Metalinguistic Comments
+(n = 602)
+Languages of the
+Comments English Korean
+“남준 오빠 영어 발음
+Data ROSIE’s accent is so
+개섹시해
+Examples
+ELEGANT and
+ㅠㅠㅠㅠㅠㅠㅠㅠ
+MAGESTIC. its chef’s kiss
+T: Namjoon’s English
+pronunciation is so sexy”
+Video#1 82 53
+Video#2 109 10
+Video#3 143 31
+Video#4 110 64
+Tally 444 (74.1 %) 158 (25.9 %)
+The predominance of English comments may be due to the global popularity of K‑pop
+and fans’ use of English as lingua franca (Faiza, 2020) and the bilingual representation of
+the video content (e.g., all four videos provided English subtitles, and three videos indi‑
+cated the availability of English subtitles in their title).
+3.2. Data Analysis
+The overarching analytic approach we adopted in this study is content analysis, as our
+research is an exploratory and data‑driven study. Content analysis is a method for “the
+subjective interpretation of the content of text data through the systematic classification
+process of coding and identifying themes or patterns” (Hsieh & Shannon, 2005, p. 1278).
+Following Aslan and Vásquez’s (2018) coding procedure of metalinguistic commentary
+on YouTube, our analysis consisted of two stages: we first categorized the data into a tri‑
+partite division, including positive, negative, and neutral comments. While standards for
+neutrality can differ among individuals, our emphasis was on explicit evaluations. Thus,
+both positive and negative evaluations were frequently accompanied by evaluative adjec‑
+tives, and any mere description of the accent through labeling the English varieties (e.g.,
+Australian accents) was regarded as neutral. We present examples of the above categories
+later in the next section in Table 4. We then mapped out emerging and reoccurring subcat‑
+egories concerning what accent‑related aspects (e.g., (non‑)nativeness) are subject to the
+evaluation in users’ metalinguistic comments and how those accent‑related aspects are as‑
+sociated with the idols as an individual (e.g., social attractiveness).
+Languages 2025, 10, 75 10 of 20
+Table 4. The overall tendency in terms of general evaluation.
+very pretentious)
+General
+Evaluation
+Percentage
+(Number) Example
+Positive 88.1% (357)
+Overall positive evaluation (e.g., I want to
+be born with that pronunciation),
+Adjectives of positive evaluation (e.g., Rose
+and her aussie accent is so elegant)
+Neutral 10.6% (43) Mere description of accent (e.g., They both
+speak aussie accent)
+Negative 1.3% (5)
+Adjectives of negative evaluation (e.g., I
+find Jennie’s kiwi accent to be
+On a practical note, we each read through all accent‑related comments to familiarize
+ourselves with the data. This, in turn, allowed us to identify recurring themes emerging
+from the data. Meanwhile, we annotated the data with memos and notes to help ourselves
+identify repeated patterns relating to aspects being evaluated in the comments. Prior to
+formally undertaking the data analysis, we conducted a pilot analysis focusing on 100 com‑
+ments from the dataset. Based on our pilot analysis, we decided on initial codes and the
+tripartite division together. Then, we went through several rounds of coding indepen‑
+dently, drawing on the agreed‑upon categories. In this way, we constructed the codes
+inductively and recursively by re‑reading and analyzing all the metalinguistic comments
+under examination. Specifically, both authors first coded the data independently based
+on the initial categories. Following the independent coding, the two authors compared
+their codebooks and, after discussing any discrepancies, reached 100% agreement on the
+results. Codes used in the data analysis included social attractiveness, (non‑)nativeness,
+phonetic features, speech, motivation, proficiency, comprehensibility, and metalinguistics.
+Additionally, we used “simultaneous coding” (Saldaña & Mallette, 2017) for some com‑
+ments when there are overlapping codes. In other words, a single comment is coded with
+multiple labels when its evaluation has references to multiple accent‑related aspects (e.g.,
+social attractiveness and (non‑)nativeness).
+In the following sections, we present findings based on our research foci, which are
+as follows: (1) affect (i.e., positive, negative, neutral) of the metalinguistic comments;
+(2) dominant aspects related to the corresponding affect (e.g., social attractiveness, (non)‑
+nativeness). Following the above section, we offer a discussion regarding off‑topic com‑
+ments identified in our dataset.
