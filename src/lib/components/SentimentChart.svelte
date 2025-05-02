@@ -40,6 +40,15 @@
     chartCanvas.dispatchEvent(event);
   }
   
+  // Handle keyboard events for accessibility
+  function handleKeyDown(event, segment) {
+    // Handle Enter or Space key
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      handleSegmentClick(segment);
+    }
+  }
+  
   // Initialize chart on mount
   onMount(() => {
     if (typeof window !== 'undefined' && chartCanvas) {
@@ -130,35 +139,50 @@
   </div>
   
   <div class="sentiment-stats">
-    <div class="stat-item {selectedSegment === 'positive' ? 'selected' : ''}" 
-         on:click={() => handleSegmentClick('positive')}>
+    <button 
+      class="stat-item {selectedSegment === 'positive' ? 'selected' : ''}" 
+      on:click={() => handleSegmentClick('positive')}
+      on:keydown={(e) => handleKeyDown(e, 'positive')}
+      aria-pressed={selectedSegment === 'positive'}
+      aria-label="Select positive sentiment"
+    >
       <div class="stat-color positive"></div>
       <div class="stat-label">Positive</div>
       <div class="stat-value">{formatPercentage(positive)}</div>
       {#if showNumbers}
         <div class="stat-count">{positiveCount} comments</div>
       {/if}
-    </div>
+    </button>
     
-    <div class="stat-item {selectedSegment === 'neutral' ? 'selected' : ''}"
-         on:click={() => handleSegmentClick('neutral')}>
+    <button 
+      class="stat-item {selectedSegment === 'neutral' ? 'selected' : ''}"
+      on:click={() => handleSegmentClick('neutral')}
+      on:keydown={(e) => handleKeyDown(e, 'neutral')}
+      aria-pressed={selectedSegment === 'neutral'}
+      aria-label="Select neutral sentiment"
+    >
       <div class="stat-color neutral"></div>
       <div class="stat-label">Neutral</div>
       <div class="stat-value">{formatPercentage(neutral)}</div>
       {#if showNumbers}
         <div class="stat-count">{neutralCount} comments</div>
       {/if}
-    </div>
+    </button>
     
-    <div class="stat-item {selectedSegment === 'negative' ? 'selected' : ''}"
-         on:click={() => handleSegmentClick('negative')}>
+    <button 
+      class="stat-item {selectedSegment === 'negative' ? 'selected' : ''}"
+      on:click={() => handleSegmentClick('negative')}
+      on:keydown={(e) => handleKeyDown(e, 'negative')}
+      aria-pressed={selectedSegment === 'negative'}
+      aria-label="Select negative sentiment"
+    >
       <div class="stat-color negative"></div>
       <div class="stat-label">Negative</div>
       <div class="stat-value">{formatPercentage(negative)}</div>
       {#if showNumbers}
         <div class="stat-count">{negativeCount} comments</div>
       {/if}
-    </div>
+    </button>
   </div>
   
   {#if selectedSegment}
@@ -227,6 +251,10 @@
     border-radius: var(--border-radius-md);
     cursor: pointer;
     transition: background-color 0.2s;
+    background: none;
+    border: none;
+    text-align: left;
+    width: 100%;
   }
   
   .stat-item:hover {

@@ -19,11 +19,11 @@
    - True reactivity without virtual DOM
    - Scoped CSS with component-level styling
 
-
 2. **CSS**: Using a combination of approaches
    - Global CSS variables for design tokens
    - Component-scoped CSS for specific styling
-   - Minimal use of CSS frameworks to keep bundle size small
+   - Custom CSS classes for component styling
+   - Tailwind CSS as a fallback for utility classes
 
 ### Data Visualization
 
@@ -31,7 +31,7 @@
    - Responsive charts that work across devices
    - Animation capabilities for engaging visualizations
    - Customizable appearance to match design system
-
+   - Dynamic loading for performance optimization
 
 ### Media Integration
 
@@ -39,6 +39,7 @@
    - Control over playback
    - Event handling for user interactions
    - Customizable appearance
+   - Timestamp navigation for specific accent examples
 
 ### Development Tools
 
@@ -52,7 +53,6 @@
    - Automated formatting
    - Static analysis to catch common issues
 
-
 ## Development Setup
 
 ### Local Development Environment
@@ -62,41 +62,41 @@ research-paper-webapp-poc/
 ├── .vscode/                # VS Code configuration
 ├── node_modules/           # Dependencies
 ├── src/
-├── lib/
-│   ├── components/
-│   │   ├── Header.svelte
-│   │   ├── Footer.svelte
-│   │   ├── VideoPlayer.svelte
-│   │   ├── CommentCard.svelte
-│   │   ├── IdolProfile.svelte
-│   │   ├── SentimentChart.svelte
-│   │   ├── FilterBar.svelte
-│   │   ├── AccentBadge.svelte
-│   ├── styles/
-│   │   ├── global.css         // Global styles including design system variables 
-│   ├── utils/
-│   │   ├── helpers.js         // General utility functions
-│   ├── data/
-│   │   ├── idols.json         // Data from Table 2 in the paper
-│   │   ├── videos.json        // Data from Table 1 in the paper
-│   │   ├── findings.json      // Key statistics from the paper
-├── routes/
-│   ├── +page.svelte           // Home page with research summary
-│   ├── +layout.svelte         // Main app layout
-│   ├── videos/+page.svelte    // Video showcase
-│   ├── idols/+page.svelte     // Idol profiles 
-│   ├── comments/+page.svelte  // Comment explorer (placeholder for later)
-│   ├── learn/+page.svelte     // Educational content
-│   ├── about/+page.svelte     // About the research & credits
+│   ├── app.css             # Global CSS including design tokens
+│   ├── app.html            # HTML template
+│   ├── lib/
+│   │   ├── components/
+│   │   │   ├── Header.svelte
+│   │   │   ├── Footer.svelte
+│   │   │   ├── VideoPlayer.svelte
+│   │   │   ├── CommentCard.svelte
+│   │   │   ├── IdolProfile.svelte
+│   │   │   ├── SentimentChart.svelte
+│   │   │   ├── FilterBar.svelte
+│   │   │   ├── AccentBadge.svelte
+│   │   ├── utils/
+│   │   │   ├── helpers.js         # General utility functions
+│   │   ├── data/
+│   │   │   ├── idols.json         # Data from Table 2 in the paper
+│   │   │   ├── videos.json        # Data from Table 1 in the paper
+│   │   │   ├── findings.json      # Key statistics from the paper
+│   ├── routes/
+│   │   ├── +page.svelte           # Home page with research summary
+│   │   ├── +layout.svelte         # Main app layout
+│   │   ├── videos/+page.svelte    # Video showcase
+│   │   ├── idols/+page.svelte     # Idol profiles 
+│   │   ├── comments/+page.svelte  # Comment explorer (placeholder for later)
+│   │   ├── learn/+page.svelte     # Educational content
+│   │   ├── about/+page.svelte     # About the research & credits
 ├── static/
 │   ├── images/
 │   ├── favicon.png
-│   └── app.html            # HTML template
-├── static/                 # Static assets
+├── memory-bank/            # Project documentation
+├── plans/                  # Planning documents
 ├── tests/                  # Test files
 ├── package.json            # Dependencies and scripts
 ├── svelte.config.js        # Svelte configuration
-├── tsconfig.json           # TypeScript configuration
+├── jsconfig.json           # JavaScript configuration
 └── vite.config.js          # Vite configuration
 ```
 
@@ -149,7 +149,9 @@ research-paper-webapp-poc/
 | @sveltejs/kit | Core framework | Latest |
 | svelte | Component framework | Latest |
 | chart.js | Data visualization | Latest |
-| d3 (optional) | Advanced visualizations | Latest |
+| tailwindcss | Utility CSS framework | Latest |
+| @tailwindcss/forms | Form styling utilities | Latest |
+| @tailwindcss/typography | Typography utilities | Latest |
 
 ### Development Dependencies
 
@@ -179,7 +181,8 @@ research-paper-webapp-poc/
 - **WCAG 2.1 AA**: Compliance with accessibility standards
 - **Keyboard Navigation**: Full functionality without mouse
 - **Screen Reader Support**: Proper ARIA attributes and semantic HTML
-
+- **Focus Management**: Visible focus indicators for keyboard users
+- **Semantic HTML**: Using appropriate HTML elements for their intended purpose
 
 ### Deployment Considerations
 
@@ -200,6 +203,13 @@ research-paper-webapp-poc/
    - Document props, events, and usage examples
    - Include accessibility considerations
 
+3. **Accessibility Implementation**:
+   - Use semantic HTML elements
+   - Add appropriate ARIA attributes
+   - Ensure keyboard navigation
+   - Provide visible focus indicators
+   - Test with screen readers
+
 ### Data Management
 
 1. **Data Transformation**:
@@ -212,6 +222,71 @@ research-paper-webapp-poc/
    - Keep state as close to components as possible
    - Derive computed values from base state
 
+### CSS Implementation
+
+1. **Design System**:
+   - Define global CSS variables for design tokens
+   - Implement consistent spacing, typography, and color systems
+   - Create reusable component styles
+
+2. **Responsive Design**:
+   - Use mobile-first approach
+   - Define breakpoints for different screen sizes
+   - Implement flexible layouts that adapt to different viewport sizes
+
+3. **Accessibility Considerations**:
+   - Ensure sufficient color contrast
+   - Provide visible focus indicators
+   - Use appropriate font sizes and line heights
+   - Implement proper spacing for touch targets
+
+## Implemented Components
+
+1. **Header.svelte**:
+   - Responsive navigation with mobile menu support
+   - Active page indication
+   - Accessible navigation
+
+2. **Footer.svelte**:
+   - Three-column layout with research information and navigation
+   - Responsive design that adapts to different screen sizes
+   - Copyright and attribution information
+
+3. **VideoPlayer.svelte**:
+   - YouTube integration with metadata display
+   - Timestamp navigation for specific accent examples
+   - Responsive video container with 16:9 aspect ratio
+   - Metadata display for video information
+
+4. **CommentCard.svelte**:
+   - Interactive cards with sentiment indicators
+   - Tag support for categorization
+   - Expandable content for long comments
+   - Language indication for bilingual content
+
+5. **IdolProfile.svelte**:
+   - Detailed profile cards with sentiment analysis visualization
+   - Demographic information display
+   - Accent type visualization
+   - Video reference links
+
+6. **SentimentChart.svelte**:
+   - Interactive pie chart with Chart.js
+   - Accessible controls with keyboard navigation
+   - Segment selection with visual feedback
+   - Detailed information display for selected segments
+
+7. **FilterBar.svelte**:
+   - Collapsible filter system with multi-select capabilities
+   - Category grouping for organized filtering
+   - Count indicators for filter options
+   - Clear selection functionality
+
+8. **AccentBadge.svelte**:
+   - Flexible badge component with color mapping for accent types
+   - Size variants for different contexts
+   - Outlined and filled style options
+   - Automatic contrast calculation for text color
 
 ## Future Technical Considerations
 
@@ -221,8 +296,6 @@ While out of scope for the proof of concept, these technical considerations are 
 2. **Expanded Dataset**: Add functionality to analyze comments from newer videos
 3. **User Contribution**: Let users submit additional examples of K-pop idols' English speech
 4. **Accent Quiz**: Create an interactive game where users try to identify different English accents
-
-
-
-
-
+5. **Performance Optimization**: Implement code splitting, lazy loading, and other performance optimizations
+6. **Advanced Visualizations**: Add more complex data visualizations for deeper analysis
+7. **Internationalization**: Add support for multiple languages beyond English and Korean
