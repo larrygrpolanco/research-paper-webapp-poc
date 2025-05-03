@@ -63,26 +63,19 @@
   
   // Handle idol selection
   function selectIdol(idol) {
+    // First set the selected idol
     selectedIdol = idol;
-    window.scrollTo({
-      top: document.getElementById('idol-detail').offsetTop - 100,
-      behavior: 'smooth'
-    });
-  }
-  
-  // Get accent description
-  function getAccentDescription(accentType) {
-    const descriptions = {
-      'American accent': 'General American English accent, characterized by rhotic pronunciation and neutral vowels.',
-      'Australian accent': 'Australian English accent, characterized by non-rhotic pronunciation and distinctive vowel shifts.',
-      'Valley girl accent': 'Sociolect of American English associated with Southern California, characterized by uptalk and vocal fry.',
-      'New York accent': 'Dialect of American English spoken in New York City, characterized by non-rhotic pronunciation and distinctive vowel shifts.',
-      'New Zealand accent': 'New Zealand English accent, similar to Australian but with distinctive vowel shifts and intonation patterns.',
-      'Undefined': 'No specific accent type identified in the research.',
-      'Canadian accent': 'Canadian English accent, similar to General American but with distinctive features like Canadian raising.'
-    };
     
-    return descriptions[accentType] || accentType;
+    // Use setTimeout to ensure the element exists before scrolling
+    setTimeout(() => {
+      const detailElement = document.getElementById('idol-detail');
+      if (detailElement) {
+        window.scrollTo({
+          top: detailElement.offsetTop - 100,
+          behavior: 'smooth'
+        });
+      }
+    }, 0);
   }
   
   // Get accent examples
@@ -248,7 +241,7 @@
             
             <div class="info-section">
               <h3 class="info-title">Accent Type</h3>
-              <p class="info-text">{getAccentDescription(selectedIdol.accentType)}</p>
+              <p class="info-text">{selectedIdol.accentType}</p>
               
               {#if getAccentExamples(selectedIdol.accentType).length > 0}
                 <h4 class="info-subtitle">Accent Features</h4>
@@ -265,7 +258,7 @@
               <ul class="videos-list">
                 {#each selectedIdol.appearsInVideos as videoId}
                   <li>
-                    <a href="/videos/{videoId}" class="video-link">Video #{videoId}</a>
+                    <a href="/videos" class="video-link">Video #{videoId}</a>
                   </li>
                 {/each}
               </ul>
@@ -531,6 +524,9 @@
   .info-text {
     margin: 0 0 var(--spacing-2);
     line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
   }
   
   .accent-features {
@@ -567,6 +563,11 @@
     color: var(--color-text-secondary);
   }
   
+  .idol-sentiment {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
   .action-buttons {
     display: flex;
     justify-content: center;
@@ -595,6 +596,31 @@
   }
   
   /* Responsive styles */
+  @media (max-width: 639px) {
+    .idol-detail {
+      padding: var(--spacing-3);
+    }
+    
+    .info-text {
+      font-size: var(--font-size-small);
+    }
+    
+    .accent-features {
+      padding-left: var(--spacing-2);
+    }
+    
+    .accent-features li {
+      margin-bottom: var(--spacing-1);
+      line-height: 1.4;
+    }
+  }
+  
+  @media (min-width: 640px) and (max-width: 1023px) {
+    .idol-detail {
+      padding: var(--spacing-3);
+    }
+  }
+  
   @media (min-width: 1024px) {
     .idol-detail-content {
       grid-template-columns: 1fr 1fr;

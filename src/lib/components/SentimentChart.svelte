@@ -93,16 +93,25 @@
       options: {
         responsive: true,
         maintainAspectRatio: false,
+        layout: {
+          padding: {
+            top: 10,
+            bottom: 20
+          }
+        },
         plugins: {
           legend: {
             position: 'bottom',
             labels: {
               padding: 20,
+              boxWidth: 15,
+              boxHeight: 15,
               font: {
                 family: getComputedStyle(document.documentElement).getPropertyValue('--font-family').trim(),
                 size: 14
               }
-            }
+            },
+            display: false // Hide default legend since we have custom stats below
           },
           tooltip: {
             callbacks: {
@@ -112,6 +121,13 @@
                 const count = [positiveCount, neutralCount, negativeCount][context.dataIndex];
                 return `${label}: ${formatPercentage(value)} (${count} comments)`;
               }
+            },
+            padding: 12,
+            titleFont: {
+              size: 14
+            },
+            bodyFont: {
+              size: 13
             }
           }
         },
@@ -128,14 +144,16 @@
 </script>
 
 <div class="sentiment-chart-container">
-  <h3 class="chart-title">{title}</h3>
-  
-  {#if description}
-    <p class="chart-description">{description}</p>
-  {/if}
+  <header class="chart-header">
+    <h3 class="chart-title">{title}</h3>
+    
+    {#if description}
+      <p class="chart-description">{description}</p>
+    {/if}
+  </header>
   
   <div class="chart-wrapper">
-    <canvas bind:this={chartCanvas}></canvas>
+    <canvas bind:this={chartCanvas} aria-label="Sentiment analysis pie chart" role="img"></canvas>
   </div>
   
   <div class="sentiment-stats">
@@ -211,8 +229,13 @@
     background-color: white;
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-md);
-    padding: var(--spacing-3);
+    padding: var(--spacing-4);
     margin-bottom: var(--spacing-4);
+    overflow: hidden; /* Ensure content doesn't overflow */
+  }
+  
+  .chart-header {
+    margin-bottom: var(--spacing-3);
   }
   
   .chart-title {
@@ -221,20 +244,24 @@
     margin-bottom: var(--spacing-1);
     font-size: var(--font-size-h3);
     line-height: var(--line-height-h3);
+    color: var(--color-text-primary);
   }
   
   .chart-description {
     text-align: center;
     color: var(--color-text-secondary);
-    margin-bottom: var(--spacing-3);
+    margin-bottom: 0;
     font-size: var(--font-size-small);
     line-height: var(--line-height-small);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .chart-wrapper {
-    height: 300px;
+    height: 280px;
     position: relative;
-    margin-bottom: var(--spacing-3);
+    margin-bottom: var(--spacing-4);
   }
   
   .sentiment-stats {
@@ -246,8 +273,9 @@
   
   .stat-item {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    padding: var(--spacing-1) var(--spacing-2);
+    padding: var(--spacing-2);
     border-radius: var(--border-radius-md);
     cursor: pointer;
     transition: background-color 0.2s;
@@ -263,6 +291,8 @@
   
   .stat-item.selected {
     background-color: rgba(0, 0, 0, 0.05);
+    border-left: 3px solid var(--color-secondary);
+    padding-left: calc(var(--spacing-2) - 3px);
   }
   
   .stat-color {
@@ -270,6 +300,7 @@
     height: 16px;
     border-radius: 50%;
     margin-right: var(--spacing-2);
+    flex-shrink: 0;
   }
   
   .stat-color.positive {
@@ -287,36 +318,45 @@
   .stat-label {
     flex-grow: 1;
     font-weight: var(--font-weight-medium);
+    margin-right: var(--spacing-2);
+    min-width: 70px;
   }
   
   .stat-value {
     font-weight: var(--font-weight-bold);
     margin-right: var(--spacing-2);
+    flex-shrink: 0;
   }
   
   .stat-count {
     color: var(--color-text-secondary);
     font-size: var(--font-size-small);
+    flex-basis: 100%;
+    margin-top: var(--spacing-1);
+    margin-left: calc(16px + var(--spacing-2)); /* Align with text after the color circle */
   }
   
   .segment-info {
-    background-color: rgba(0, 0, 0, 0.02);
+    background-color: rgba(0, 0, 0, 0.03);
     border-radius: var(--border-radius-md);
-    padding: var(--spacing-2);
-    margin-top: var(--spacing-2);
+    padding: var(--spacing-3);
+    margin-top: var(--spacing-3);
+    border-left: 3px solid var(--color-secondary);
   }
   
   .segment-title {
     margin-top: 0;
-    margin-bottom: var(--spacing-1);
+    margin-bottom: var(--spacing-2);
     font-size: var(--font-size-h4);
     line-height: var(--line-height-h4);
+    color: var(--color-text-primary);
   }
   
   .segment-description {
     margin-bottom: var(--spacing-2);
     font-size: var(--font-size-small);
     line-height: var(--line-height-small);
+    color: var(--color-text-secondary);
   }
   
   .clear-selection {
@@ -324,9 +364,16 @@
     border: none;
     color: var(--color-secondary);
     font-size: var(--font-size-small);
-    padding: 0;
+    padding: var(--spacing-1) var(--spacing-2);
     cursor: pointer;
     text-decoration: underline;
+    margin-top: var(--spacing-1);
+    border-radius: var(--border-radius-sm);
+    transition: background-color 0.2s;
+  }
+  
+  .clear-selection:hover {
+    background-color: rgba(98, 54, 255, 0.05);
   }
   
   /* Responsive styles */
@@ -338,6 +385,35 @@
     
     .stat-item {
       flex: 1;
+      margin: 0 var(--spacing-1);
+    }
+    
+    .stat-item:first-child {
+      margin-left: 0;
+    }
+    
+    .stat-item:last-child {
+      margin-right: 0;
+    }
+    
+    .stat-count {
+      flex-basis: auto;
+      margin-top: 0;
+      margin-left: 0;
+    }
+    
+    .sentiment-chart-container {
+      padding: var(--spacing-4);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .sentiment-chart-container {
+      padding: var(--spacing-5);
+    }
+    
+    .chart-wrapper {
+      height: 300px;
     }
   }
 </style>

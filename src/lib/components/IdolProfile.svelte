@@ -108,7 +108,7 @@
     </div>
   {/if}
   
-  {#if hasVideos}
+  <!-- {#if hasVideos}
     <div class="idol-videos">
       <h4 class="videos-heading">Featured In</h4>
       <ul class="videos-list">
@@ -119,10 +119,10 @@
         {/each}
       </ul>
     </div>
-  {/if}
+  {/if} -->
   
   <div class="idol-actions">
-    <a href="/idols/{name.toLowerCase().replace(/\s+/g, '-')}" class="btn-secondary">
+    <a href="/idols" class="btn-secondary">
       View Full Profile
     </a>
   </div>
