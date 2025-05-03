@@ -373,7 +373,7 @@
         on:filterchange={handleFilterChange}
         showCounts={true}
         collapsible={true}
-        initiallyExpanded={true}
+        initiallyExpanded={false}
       />
       
       <div class="accent-types">
