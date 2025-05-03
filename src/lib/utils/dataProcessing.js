@@ -9,74 +9,134 @@
  * @return {Array} Structured JSON data array of comments
  */
 export function parseCommentsCSV(csvData) {
-	// Split the CSV into lines and remove the header
-	const lines = csvData.split('\n');
-	const headers = lines[0].split(',');
+	// First, parse the CSV data into records, properly handling quoted fields
+	const records = parseCSV(csvData);
 	const commentData = [];
 
-	// Process each line (skipping header)
-	for (let i = 1; i < lines.length; i++) {
-		if (!lines[i].trim()) continue; // Skip empty lines
+	// Process each record
+	for (let i = 1; i < records.length; i++) { // Skip header row
+		const record = records[i];
+		if (!record || record.length < 6 || !record[0]) continue; // Skip invalid records
 
-		// Handle commas within quoted fields
-		let currentLine = lines[i];
-		const values = [];
-		let inQuotes = false;
-		let currentValue = '';
+		// Extract values from the record
+		const videoId = record[0];
+		const commentText = record[1] || '';
+		const language = record[2] === '1' ? 'English' : 'Korean';
+		const sentiment = mapSentiment(record[3]);
+		const aspectsStr = record[4] || '';
+		const quotesStr = record[5] || null;
+		const notesStr = record.length > 6 ? record[6] || '' : '';
 
-		for (let j = 0; j < currentLine.length; j++) {
-			const char = currentLine[j];
+		// Process Korean comments with translations
+		let originalText = commentText;
+		let translation = null;
 
-			if (char === '"') {
-				inQuotes = !inQuotes;
-			} else if (char === ',' && !inQuotes) {
-				values.push(currentValue.trim());
-				currentValue = '';
-			} else {
-				currentValue += char;
-			}
-		}
-
-		// Add the last value
-		values.push(currentValue.trim());
-
-		// Create a comment object
-		const comment = {
-			id: `${values[0]}-${i}`, // Create a unique ID from video# and row number
-			videoId: parseInt(values[0], 10),
-			text: values[1] || '', // Ensure text is not undefined
-			language: values[2] === '1' ? 'English' : 'Korean',
-			sentiment: mapSentiment(values[3]),
-			evaluationAspects: parseAspects(values[4]),
-			quotes: values[5] || null
-		};
-
-		// Add translation if it's a Korean comment
-		if (comment.language === 'Korean' && comment.text) {
-			const translationMatch = comment.text.match(/T: (.*)/);
+		if (language === 'Korean' && commentText) {
+			// Check for translation pattern in the comment text
+			const translationPattern = /\n\nT: (.*?)(?:\n|$)/s;
+			const translationMatch = commentText.match(translationPattern);
+			
 			if (translationMatch) {
-				comment.translation = translationMatch[1];
-				comment.originalText = comment.text.replace(/\s*T: .*$/, '');
+				translation = translationMatch[1].trim();
+				originalText = commentText.replace(translationPattern, '').trim();
 			} else {
-				// Look for translation in the text itself
-				const parts = comment.text.split('\n\n');
-				if (parts.length > 1) {
-					const lastPart = parts[parts.length - 1];
-					if (lastPart.startsWith('T:')) {
-						comment.translation = lastPart.substring(2).trim();
-						comment.originalText = parts.slice(0, -1).join('\n\n');
-					}
+				// Alternative pattern: T: at the beginning of a line
+				const altPattern = /T: (.*?)(?:\n|$)/s;
+				const altMatch = commentText.match(altPattern);
+				
+				if (altMatch) {
+					translation = altMatch[1].trim();
+					originalText = commentText.replace(altPattern, '').trim();
 				}
 			}
 		}
 
-		// Extract mentioned idols
+		// Create a comment object
+		const comment = {
+			id: `${videoId}-${i}`, // Create a unique ID from video# and row number
+			videoId: parseInt(videoId, 10) || null,
+			text: language === 'Korean' && translation ? originalText : commentText,
+			language: language,
+			sentiment: sentiment,
+			evaluationAspects: parseAspects(aspectsStr),
+			quotes: quotesStr
+		};
+
+		// Add translation fields if present
+		if (language === 'Korean' && translation) {
+			comment.originalText = originalText;
+			comment.translation = translation;
+		}
+
+		// Extract mentioned idols from both original text and translation
 		comment.mentionedIdols = extractMentionedIdols(comment.text || '');
+		if (translation) {
+			const translationIdols = extractMentionedIdols(translation);
+			comment.mentionedIdols = [...new Set([...comment.mentionedIdols, ...translationIdols])];
+		}
 
 		commentData.push(comment);
 	}
 
 	return commentData;
+}
+
+/**
+ * Parses CSV data into records, properly handling quoted fields and newlines
+ * @param {string} csvData - The raw CSV data as a string
+ * @return {Array} Array of records, each record being an array of field values
+ */
+function parseCSV(csvData) {
+	const records = [];
+	let currentRecord = [];
+	let currentField = '';
+	let inQuotes = false;
+	
+	// Add a newline at the end to ensure the last record is processed
+	csvData += '\n';
+	
+	for (let i = 0; i < csvData.length; i++) {
+		const char = csvData[i];
+		const nextChar = i < csvData.length - 1 ? csvData[i + 1] : '';
+		
+		// Handle quotes
+		if (char === '"') {
+			// Check for escaped quotes (double quotes)
+			if (nextChar === '"') {
+				currentField += '"';
+				i++; // Skip the next quote
+			} else {
+				inQuotes = !inQuotes;
+			}
+		}
+		// Handle commas
+		else if (char === ',' && !inQuotes) {
+			currentRecord.push(currentField);
+			currentField = '';
+		}
+		// Handle newlines
+		else if ((char === '\n' || (char === '\r' && nextChar === '\n')) && !inQuotes) {
+			if (char === '\r') i++; // Skip the \n in \r\n
+			
+			// Add the last field to the current record
+			currentRecord.push(currentField);
+			currentField = '';
+			
+			// Add the current record to the records array if it's not empty
+			if (currentRecord.some(field => field.trim() !== '')) {
+				records.push(currentRecord);
+			}
+			
+			// Start a new record
+			currentRecord = [];
+		}
+		// Handle normal characters
+		else {
+			currentField += char;
+		}
+	}
+	
+	return records;
 }
 
 /**
